@@ -13,6 +13,7 @@ public class Move : MonoBehaviour
 
     public float Speed;
     public float GridSize;
+    public LayerMask StopmMovement;
 
 
     // Start is called before the first frame update
@@ -35,12 +36,18 @@ public class Move : MonoBehaviour
             if (h != 0)
             {
                 TargetPos = transform.position + h * MoveHor;
-                StartCoroutine(MoveCooldown());
+                if (!Physics2D.OverlapCircle(TargetPos, 0.2f, StopmMovement))
+                {
+                    StartCoroutine(MoveCooldown());
+                }
             }
             else if (v != 0)
             {
                 TargetPos = transform.position + v * MoveVer;
-                StartCoroutine(MoveCooldown());
+                if (!Physics2D.OverlapCircle(TargetPos, 0.2f, StopmMovement))
+                {
+                    StartCoroutine(MoveCooldown());
+                }
             }
         }       
     }
