@@ -9,9 +9,9 @@ public class Move : MonoBehaviour
     private Vector3 MoveHor;
     private Vector3 MoveVer;
     private Vector3 TargetPos;
-    private bool moving = false;
+    private bool Moving = false;
 
-    public float speed;
+    public float Speed;
     public float GridSize;
 
 
@@ -30,7 +30,7 @@ public class Move : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
 
-        if(!moving)
+        if(!Moving)
         {
             if (h != 0)
             {
@@ -49,15 +49,15 @@ public class Move : MonoBehaviour
     //Corrotina para restringir movimento. -A
     private IEnumerator MoveCooldown()
     {
-        moving = true;
+        Moving = true;
         while(transform.position != TargetPos)
         {
-            transform.position = Vector3.Lerp(transform.position, TargetPos, speed * Time.deltaTime); //Move para a direção alvo. -A
+            transform.position = Vector3.Lerp(transform.position, TargetPos, Speed * Time.deltaTime); //Move para a direção alvo. -A
             yield return null;
         }
 
         transform.position = TargetPos; //Tira o erro do movimento. -A
 
-        moving = false;
+        Moving = false;
     }
 }
