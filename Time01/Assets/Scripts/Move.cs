@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEditor.Experimental;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Move : MonoBehaviour
 {
- 
+
+    [SerializeField]
+    private Tilemap ground;
+    [SerializeField]
+    private Tilemap collisions;
     private Vector3 MoveHor;
     private Vector3 MoveVer;
     private Vector3 TargetPos;
@@ -36,7 +41,7 @@ public class Move : MonoBehaviour
             if (h != 0)
             {
                 TargetPos = transform.position + h * MoveHor;
-                if (!Physics2D.OverlapCircle(TargetPos, 0.2f, StopmMovement))
+                if (!Physics2D.OverlapCircle(TargetPos, 0.2f, StopmMovement)) //Quando implementar a arte no tilemap usar CanMove()
                 {
                     StartCoroutine(MoveCooldown());
                 }
@@ -44,7 +49,7 @@ public class Move : MonoBehaviour
             else if (v != 0)
             {
                 TargetPos = transform.position + v * MoveVer;
-                if (!Physics2D.OverlapCircle(TargetPos, 0.2f, StopmMovement))
+                if (!Physics2D.OverlapCircle(TargetPos, 0.2f, StopmMovement)) //Quando implementar a arte no tilemap usar CanMove()
                 {
                     StartCoroutine(MoveCooldown());
                 }
@@ -52,6 +57,15 @@ public class Move : MonoBehaviour
         }       
     }
 
+    private bool CanMove(Vector3 direction)
+    {
+        Vector3Int gridPos = ground.WorldToCell(direction);
+        if (!ground.HasTile(gridPos) || collisions.HasTile(gridPos))
+        {
+            return false;
+        }
+        return true;
+    }
 
     //Corrotina para restringir movimento. -A
     private IEnumerator MoveCooldown()
