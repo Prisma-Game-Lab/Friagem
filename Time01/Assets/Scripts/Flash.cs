@@ -5,6 +5,7 @@ using UnityEngine;
 public class Flash : MonoBehaviour
 {
 
+    public string BotaoFlash;
     public bool ilumina = false;
     public float tempoIluminado;
 
@@ -17,7 +18,7 @@ public class Flash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("space"))
+        if(Input.GetKeyDown(BotaoFlash))
         {
             StartCoroutine(Luz());
         }
