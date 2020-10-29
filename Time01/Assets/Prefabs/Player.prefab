@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f9f5bb72abf974889afedf7681df7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ground: {fileID: 0}
+  obstaculos: {fileID: 0}
   Speed: 50
   GridSize: 2
   StopmMovement:
@@ -139,5 +141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7fabdad2b84e914a93e1feee825d66c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BotaoFlash: space
   ilumina: 0
   tempoIluminado: 2

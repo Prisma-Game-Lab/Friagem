@@ -10,7 +10,7 @@ public class Move : MonoBehaviour
     [SerializeField]
     private Tilemap ground;
     [SerializeField]
-    private Tilemap collisions;
+    private Tilemap obstaculos;
     private Vector3 MoveHor;
     private Vector3 MoveVer;
     private Vector3 TargetPos;
@@ -60,7 +60,7 @@ public class Move : MonoBehaviour
     private bool CanMove(Vector3 direction)
     {
         Vector3Int gridPos = ground.WorldToCell(direction);
-        if (!ground.HasTile(gridPos) || collisions.HasTile(gridPos))
+        if (obstaculos.HasTile(gridPos))
         {
             return false;
         }
