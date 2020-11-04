@@ -19,6 +19,7 @@ public class Move : MonoBehaviour
     public float Speed;
     public float GridSize;
     public LayerMask StopmMovement;
+    public GameObject player;
 
 
     // Start is called before the first frame update
@@ -38,7 +39,7 @@ public class Move : MonoBehaviour
 
         if(!Moving)
         {
-            if (h != 0)
+            if (h != 0 && !(player.GetComponent<Playerpush>().SegurandoCaixavertical))
             {
                 TargetPos = transform.position + h * MoveHor;
                 if (!Physics2D.OverlapCircle(TargetPos, 0.2f, StopmMovement)) //Quando implementar a arte no tilemap usar CanMove()
@@ -46,7 +47,7 @@ public class Move : MonoBehaviour
                     StartCoroutine(MoveCooldown());
                 }
             }
-            else if (v != 0)
+            else if (v != 0 && !(player.GetComponent<Playerpush>().SegurandoCaixahorizontal))
             {
                 TargetPos = transform.position + v * MoveVer;
                 if (!Physics2D.OverlapCircle(TargetPos, 0.2f, StopmMovement)) //Quando implementar a arte no tilemap usar CanMove()
