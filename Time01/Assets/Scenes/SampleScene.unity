@@ -198,8 +198,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.5, y: -3.5, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -2448,8 +2448,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811089465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -5, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: -7.5, y: -5.5, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -2489,7 +2489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   player: {fileID: 1897270029}
-  GridSize: 2
+  GridSize: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2633,7 +2633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1201467219
 Transform:
   m_ObjectHideFlags: 0
@@ -3109,12 +3109,12 @@ PrefabInstance:
     - target: {fileID: 3448317869200438001, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3448317869200438001, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3448317869200438001, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
@@ -3161,6 +3161,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3448317869200438001, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448317869200438001, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3448317869200438004, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: m_Name
@@ -3181,5 +3191,10 @@ PrefabInstance:
       propertyPath: obstaculos
       value: 
       objectReference: {fileID: 1358015495}
+    - target: {fileID: 3448317869200438007, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+        type: 3}
+      propertyPath: GridSize
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ae3ab7655f4f2468369b0f7ee41340, type: 3}
