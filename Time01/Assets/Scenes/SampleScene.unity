@@ -133,9 +133,9 @@ GameObject:
   - component: {fileID: 1585079}
   - component: {fileID: 1585081}
   - component: {fileID: 1585082}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Caixa
-  m_TagString: Untagged
+  m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3099,6 +3099,26 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3448317869321777453}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1897270035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897270029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34063a2dc43e5ae47861d9991e392bb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotaoCaixa: escape
+  distance: 1
+  boxMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  SegurandoCaixahorizontal: 0
+  SegurandoCaixavertical: 0
+  Player: {fileID: 1897270029}
 --- !u!1001 &3448317869321777453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3175,6 +3195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448317869200438004, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3448317869200438006, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
