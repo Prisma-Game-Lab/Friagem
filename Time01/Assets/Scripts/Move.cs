@@ -42,7 +42,19 @@ public class Move : MonoBehaviour
         {
             if (h != 0 && !(player.GetComponent<Playerpush>().SegurandoCaixavertical))
             {
-                TargetPos = transform.position + h * MoveHor;
+                if(player.GetComponent<Playerpush>().StopRight && h > 0)
+                {
+                    TargetPos = transform.position;
+                }
+                else if(player.GetComponent<Playerpush>().StopLeft && h < 0)
+                {
+                    TargetPos = transform.position;
+                }
+                else
+                {
+                    TargetPos = transform.position + h * MoveHor;
+                }
+                
                 if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                 {
                     StartCoroutine(MoveCooldown());
@@ -50,7 +62,18 @@ public class Move : MonoBehaviour
             }
             else if (v != 0 && !(player.GetComponent<Playerpush>().SegurandoCaixahorizontal))
             {
-                TargetPos = transform.position + v * MoveVer;
+                if (player.GetComponent<Playerpush>().StopUp && v > 0)
+                {
+                    TargetPos = transform.position;
+                }
+                else if (player.GetComponent<Playerpush>().StopDown && v < 0)
+                {
+                    TargetPos = transform.position;
+                }
+                else
+                {
+                    TargetPos = transform.position + v * MoveVer;
+                }
                 if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                 {
                     StartCoroutine(MoveCooldown());

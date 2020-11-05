@@ -11,6 +11,12 @@ public class Playerpush : MonoBehaviour
     public bool SegurandoCaixahorizontal = false;
     public bool SegurandoCaixavertical = false;
 
+    //variaveis para verificar se as casas adjacentes estão ocupadas
+    public bool StopRight = false;
+    public bool StopLeft = false;
+    public bool StopUp = false;
+    public bool StopDown = false;
+
     GameObject box;
     public GameObject Player;
     // Start is called before the first frame update
@@ -40,6 +46,18 @@ public class Playerpush : MonoBehaviour
             box.transform.SetParent(null);
             SegurandoCaixahorizontal = false;
         }
+        else if (hitRight.collider != null && hitRight.collider.gameObject.tag == "Box")
+        {
+            StopRight = true;
+            if (Input.GetKey(BotaoCaixa))
+            {
+                StopRight = false;
+            }
+        }
+        else
+        {
+            StopRight = false;
+        }
 
         //verifica se tem caixa a esquerda
         if (hitLeft.collider != null && hitLeft.collider.gameObject.tag == "Box" && Input.GetKeyDown(BotaoCaixa))
@@ -53,6 +71,18 @@ public class Playerpush : MonoBehaviour
         {
             box.transform.SetParent(null);
             SegurandoCaixahorizontal = false;
+        }
+        else if(hitLeft.collider != null && hitLeft.collider.gameObject.tag == "Box")
+        {
+            StopLeft = true;
+            if (Input.GetKey(BotaoCaixa))
+            {
+                StopLeft = false;
+            }
+        }
+        else
+        {
+            StopLeft = false;
         }
 
         //verifica se tem caixa acima do player
@@ -68,6 +98,18 @@ public class Playerpush : MonoBehaviour
             box.transform.SetParent(null);
             SegurandoCaixavertical = false;
         }
+        else if (hitUp.collider != null && hitUp.collider.gameObject.tag == "Box")
+        {
+            StopUp = true;
+            if (Input.GetKey(BotaoCaixa))
+            {
+                StopUp = false;
+            }
+        }
+        else
+        {
+            StopUp = false;
+        }
 
         //verifica se tem caixa abaixo do player
         if (hitDown.collider != null && hitDown.collider.gameObject.tag == "Box" && Input.GetKeyDown(BotaoCaixa))
@@ -82,6 +124,19 @@ public class Playerpush : MonoBehaviour
             box.transform.SetParent(null);
             SegurandoCaixavertical = false;
         }
+        else if (hitDown.collider != null && hitDown.collider.gameObject.tag == "Box")
+        {
+            StopDown = true;
+            if (Input.GetKey(BotaoCaixa))
+            {
+                StopDown = false;
+            }
+        }
+        else
+        {
+            StopDown = false;
+        }
+
     }
 
 

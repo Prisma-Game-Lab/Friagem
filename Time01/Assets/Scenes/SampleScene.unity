@@ -3443,6 +3443,10 @@ MonoBehaviour:
     m_Bits: 1024
   SegurandoCaixahorizontal: 0
   SegurandoCaixavertical: 0
+  StopRight: 0
+  StopLeft: 0
+  StopUp: 0
+  StopDown: 0
   Player: {fileID: 1897270029}
 --- !u!1001 &3448317869321777453
 PrefabInstance:
