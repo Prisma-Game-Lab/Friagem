@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor.Experimental;
 using UnityEngine;
+using UnityEngine.Jobs;
 using UnityEngine.Tilemaps;
 
 public class Move : MonoBehaviour
@@ -42,7 +43,7 @@ public class Move : MonoBehaviour
             if (h != 0 && !(player.GetComponent<Playerpush>().SegurandoCaixavertical))
             {
                 TargetPos = transform.position + h * MoveHor;
-                if (!Physics2D.OverlapCircle(TargetPos, 0.2f, StopmMovement)) //Quando implementar a arte no tilemap usar CanMove()
+                if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                 {
                     StartCoroutine(MoveCooldown());
                 }
@@ -50,7 +51,7 @@ public class Move : MonoBehaviour
             else if (v != 0 && !(player.GetComponent<Playerpush>().SegurandoCaixahorizontal))
             {
                 TargetPos = transform.position + v * MoveVer;
-                if (!Physics2D.OverlapCircle(TargetPos, 0.2f, StopmMovement)) //Quando implementar a arte no tilemap usar CanMove()
+                if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                 {
                     StartCoroutine(MoveCooldown());
                 }
@@ -61,7 +62,7 @@ public class Move : MonoBehaviour
     private bool CanMove(Vector3 direction)
     {
         Vector3Int gridPos = ground.WorldToCell(direction);
-        if (obstaculos.HasTile(gridPos))
+        if (obstaculos.HasTile(gridPos) || !ground.HasTile(gridPos))
         {
             return false;
         }
