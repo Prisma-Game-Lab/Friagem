@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 287804236}
   - component: {fileID: 287804235}
   - component: {fileID: 287804234}
+  - component: {fileID: 287804237}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -1758,6 +1759,22 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &287804237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287804230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &426226923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,6 +2435,70 @@ Transform:
   m_Father: {fileID: 1201467219}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &1309094218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309094220}
+  - component: {fileID: 1309094219}
+  m_Layer: 0
+  m_Name: NavMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1309094219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309094218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 148387606d0ccd84fa326ca211f274ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_OverrideByGrid: 0
+  m_UseMeshPrefab: {fileID: 0}
+  m_CompressBounds: 0
+  m_OverrideVector: {x: 1, y: 1, z: 1}
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: fadaa5a09bf901a428e45a061c6d40ff, type: 2}
+--- !u!4 &1309094220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309094218}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1358015489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2432,6 +2513,7 @@ GameObject:
   - component: {fileID: 1358015493}
   - component: {fileID: 1358015492}
   - component: {fileID: 1358015491}
+  - component: {fileID: 1358015496}
   m_Layer: 0
   m_Name: Obstaculos
   m_TagString: Untagged
@@ -2940,7 +3022,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3039,7 +3121,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3072,8 +3154,8 @@ Tilemap:
   - m_RefCount: 10
     m_Data: {fileID: -4121932852077133705, guid: f9e38809d100a5e488739c800f1021a6,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -44314933641111938, guid: f9e38809d100a5e488739c800f1021a6, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 8
     m_Data: {fileID: -6003687058486884683, guid: f9e38809d100a5e488739c800f1021a6,
       type: 3}
@@ -3081,16 +3163,16 @@ Tilemap:
     m_Data: {fileID: -1729075836142754140, guid: f9e38809d100a5e488739c800f1021a6,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 7385816170914211011, guid: f9e38809d100a5e488739c800f1021a6,
-      type: 3}
+    m_Data: {fileID: -44314933641111938, guid: f9e38809d100a5e488739c800f1021a6, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1895854803786515507, guid: f9e38809d100a5e488739c800f1021a6,
       type: 3}
   - m_RefCount: 13
     m_Data: {fileID: 1654416746910207643, guid: f9e38809d100a5e488739c800f1021a6,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 7385816170914211011, guid: f9e38809d100a5e488739c800f1021a6,
+      type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 3555771563147169976, guid: f9e38809d100a5e488739c800f1021a6,
       type: 3}
@@ -3146,6 +3228,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1358015496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358015489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1459279798
 GameObject:
   m_ObjectHideFlags: 0

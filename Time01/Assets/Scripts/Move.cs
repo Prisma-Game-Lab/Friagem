@@ -62,6 +62,17 @@ public class Move : MonoBehaviour
     private bool CanMove(Vector3 direction)
     {
         Vector3Int gridPos = ground.WorldToCell(direction);
+        if (transform.childCount != 0)
+        {
+            Vector3 childDir =  transform.GetChild(0).position;
+            direction -= transform.position;
+            direction += childDir;
+            Vector3Int childGridPos = ground.WorldToCell(direction);
+            if ((obstaculos.HasTile(childGridPos) || obstaculos.HasTile(gridPos)) || (!ground.HasTile(gridPos) || !ground.HasTile(gridPos)))
+            {
+                return false;
+            }
+        }
         if (obstaculos.HasTile(gridPos) || !ground.HasTile(gridPos))
         {
             return false;
