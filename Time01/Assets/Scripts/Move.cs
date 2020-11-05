@@ -68,7 +68,7 @@ public class Move : MonoBehaviour
             direction -= transform.position;
             direction += childDir;
             Vector3Int childGridPos = ground.WorldToCell(direction);
-            if ((obstaculos.HasTile(childGridPos) || obstaculos.HasTile(gridPos)) || (!ground.HasTile(gridPos) || !ground.HasTile(gridPos)))
+            if ((obstaculos.HasTile(childGridPos) || obstaculos.HasTile(gridPos)) || (!ground.HasTile(childGridPos) || !ground.HasTile(gridPos)))
             {
                 return false;
             }
