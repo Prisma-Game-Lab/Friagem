@@ -36,7 +36,7 @@ public class Move : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Variáveis para guardar a direção do movimento. -A
         float h = Input.GetAxisRaw("Horizontal");
@@ -138,7 +138,7 @@ public class Move : MonoBehaviour
         }
 
         transform.position = TargetPos; //Tira o erro do movimento. -A
-
+        yield return new WaitForSeconds(0.5f);
         Moving = false;
     }
 }
