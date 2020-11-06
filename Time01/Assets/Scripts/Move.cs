@@ -50,11 +50,11 @@ public class Move : MonoBehaviour
         {
             if (h != 0 && !(playerPush.SegurandoCaixavertical))
             {
-                if(playerPush.StopRight && h > 0)
+                if(playerPush.Stop[0] && h > 0)
                 {
                     TargetPos = transform.position;
                 }
-                else if(playerPush.StopLeft && h < 0)
+                else if(playerPush.Stop[1] && h < 0)
                 {
                     TargetPos = transform.position;
                 }
@@ -80,11 +80,11 @@ public class Move : MonoBehaviour
             }
             else if (v != 0 && !(playerPush.SegurandoCaixahorizontal))
             {
-                if (playerPush.StopUp && v > 0)
+                if (playerPush.Stop[2] && v > 0)
                 {
                     TargetPos = transform.position;
                 }
-                else if (playerPush.StopDown && v < 0)
+                else if (playerPush.Stop[3] && v < 0)
                 {
                     TargetPos = transform.position;
                 }

@@ -12,10 +12,8 @@ public class Playerpush : MonoBehaviour
     public bool SegurandoCaixavertical = false;
 
     //variaveis para verificar se as casas adjacentes estão ocupadas
-    public bool StopRight = false;
-    public bool StopLeft = false;
-    public bool StopUp = false;
-    public bool StopDown = false;
+    [HideInInspector]
+    public bool[] Stop;
 
     GameObject box;
     public GameObject Player;
@@ -33,108 +31,42 @@ public class Playerpush : MonoBehaviour
         RaycastHit2D hitUp = Physics2D.Raycast(transform.position, Vector2.up, distance, boxMask);
         RaycastHit2D hitDown = Physics2D.Raycast(transform.position, Vector2.down, distance, boxMask);
 
-        //verifica se tem caixa a direita
-        if (hitRight.collider!=null && hitRight.collider.gameObject.tag == "Box" && Input.GetKeyDown(BotaoCaixa))
-        {
-            box = hitRight.collider.gameObject;
-            Debug.Log(hitRight.collider.name);
-            box.transform.SetParent(Player.transform);
-            SegurandoCaixahorizontal = true;
-        }
-        else if(hitRight.collider != null && hitRight.collider.gameObject.tag == "Box" && Input.GetKeyUp(BotaoCaixa))
-        {
-            box.transform.SetParent(null);
-            SegurandoCaixahorizontal = false;
-        }
-        else if (hitRight.collider != null && hitRight.collider.gameObject.tag == "Box")
-        {
-            StopRight = true;
-            if (Input.GetKey(BotaoCaixa))
-            {
-                StopRight = false;
-            }
-        }
-        else
-        {
-            StopRight = false;
-        }
+        RaycastHit2D[] hits = { hitRight, hitLeft, hitUp, hitDown };
 
-        //verifica se tem caixa a esquerda
-        if (hitLeft.collider != null && hitLeft.collider.gameObject.tag == "Box" && Input.GetKeyDown(BotaoCaixa))
+        for (int i = 0; i < 4; i++)
         {
-            box = hitLeft.collider.gameObject;
-            Debug.Log(hitLeft.collider.name);
-            box.transform.SetParent(Player.transform);
-            SegurandoCaixahorizontal = true;
-        }
-        else if (hitLeft.collider != null && hitLeft.collider.gameObject.tag == "Box" && Input.GetKeyUp(BotaoCaixa))
-        {
-            box.transform.SetParent(null);
-            SegurandoCaixahorizontal = false;
-        }
-        else if(hitLeft.collider != null && hitLeft.collider.gameObject.tag == "Box")
-        {
-            StopLeft = true;
-            if (Input.GetKey(BotaoCaixa))
+            if (hits[i].collider != null && hits[i].collider.gameObject.tag == "Box" && Input.GetKeyDown(BotaoCaixa))
             {
-                StopLeft = false;
+                box = hits[i].collider.gameObject;
+                Debug.Log(hits[i].collider.name);
+                box.transform.SetParent(Player.transform);
+                if (hits[i] == hitRight || hits[i] == hitLeft)
+                {
+                    SegurandoCaixahorizontal = true;
+                }
+                else
+                {
+                    SegurandoCaixavertical = true;
+                }
             }
-        }
-        else
-        {
-            StopLeft = false;
-        }
-
-        //verifica se tem caixa acima do player
-        if (hitUp.collider != null && hitUp.collider.gameObject.tag == "Box" && Input.GetKeyDown(BotaoCaixa))
-        {
-            box = hitUp.collider.gameObject;
-            Debug.Log(hitUp.collider.name);
-            box.transform.SetParent(Player.transform);
-            SegurandoCaixavertical = true;
-        }
-        else if (hitUp.collider != null && hitUp.collider.gameObject.tag == "Box" && Input.GetKeyUp(BotaoCaixa))
-        {
-            box.transform.SetParent(null);
-            SegurandoCaixavertical = false;
-        }
-        else if (hitUp.collider != null && hitUp.collider.gameObject.tag == "Box")
-        {
-            StopUp = true;
-            if (Input.GetKey(BotaoCaixa))
+            else if (hits[i].collider != null && hits[i].collider.gameObject.tag == "Box" && Input.GetKeyUp(BotaoCaixa))
             {
-                StopUp = false;
+                box.transform.SetParent(null);
+                SegurandoCaixahorizontal = false;
+                SegurandoCaixavertical = false;
             }
-        }
-        else
-        {
-            StopUp = false;
-        }
-
-        //verifica se tem caixa abaixo do player
-        if (hitDown.collider != null && hitDown.collider.gameObject.tag == "Box" && Input.GetKeyDown(BotaoCaixa))
-        {
-            box = hitDown.collider.gameObject;
-            Debug.Log(hitDown.collider.name);
-            box.transform.SetParent(Player.transform);
-            SegurandoCaixavertical = true;
-        }
-        else if (hitDown.collider != null && hitDown.collider.gameObject.tag == "Box" && Input.GetKeyUp(BotaoCaixa))
-        {
-            box.transform.SetParent(null);
-            SegurandoCaixavertical = false;
-        }
-        else if (hitDown.collider != null && hitDown.collider.gameObject.tag == "Box")
-        {
-            StopDown = true;
-            if (Input.GetKey(BotaoCaixa))
+            else if (hits[i].collider != null && hits[i].collider.gameObject.tag == "Box")
             {
-                StopDown = false;
+                Stop[i] = true;
+                if (Input.GetKey(BotaoCaixa))
+                {
+                    Stop[i] = false;
+                }
             }
-        }
-        else
-        {
-            StopDown = false;
+            else
+            {
+                Stop[i] = false;
+            }
         }
     }
 

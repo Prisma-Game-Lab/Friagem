@@ -3726,10 +3726,7 @@ MonoBehaviour:
     m_Bits: 1024
   SegurandoCaixahorizontal: 0
   SegurandoCaixavertical: 0
-  StopRight: 0
-  StopLeft: 0
-  StopUp: 0
-  StopDown: 0
+  Stop: 00000000
   Player: {fileID: 1897270029}
 --- !u!82 &1897270038
 AudioSource:
@@ -3967,7 +3964,7 @@ PrefabInstance:
     - target: {fileID: 3448317869200438007, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: cooldown
-      value: 0.25
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ae3ab7655f4f2468369b0f7ee41340, type: 3}
