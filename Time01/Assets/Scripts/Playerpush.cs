@@ -136,7 +136,6 @@ public class Playerpush : MonoBehaviour
         {
             StopDown = false;
         }
-
     }
 
 

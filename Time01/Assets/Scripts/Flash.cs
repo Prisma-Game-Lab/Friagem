@@ -8,6 +8,7 @@ public class Flash : MonoBehaviour
     public string BotaoFlash;
     public bool ilumina = false;
     public float tempoIluminado;
+    public Vector3 posFlash;
 
     public AudioSource flashSound;
     public AudioSource heartbeat;
@@ -32,6 +33,7 @@ public class Flash : MonoBehaviour
     private IEnumerator Luz()
     {
         Debug.Log("Flash");
+        posFlash = transform.position;
         ilumina = true;
         yield return new WaitForSeconds(tempoIluminado);
         ilumina = false;

@@ -16,9 +16,11 @@ public class Move : MonoBehaviour
     private Vector3 MoveVer;
     private Vector3 TargetPos;
     private bool Moving = false;
+    private Playerpush playerPush;
 
     public float Speed;
     public float GridSize;
+    public float cooldown;
     public LayerMask StopmMovement;
     public GameObject player;
 
@@ -33,6 +35,8 @@ public class Move : MonoBehaviour
         //Distância fixa do movimento.
         MoveHor = new Vector3(GridSize, 0f, 0f);
         MoveVer = new Vector3(0f, GridSize, 0f);
+
+        playerPush = player.GetComponent<Playerpush>();
     }
 
     // Update is called once per frame
@@ -44,13 +48,13 @@ public class Move : MonoBehaviour
 
         if(!Moving)
         {
-            if (h != 0 && !(player.GetComponent<Playerpush>().SegurandoCaixavertical))
+            if (h != 0 && !(playerPush.SegurandoCaixavertical))
             {
-                if(player.GetComponent<Playerpush>().StopRight && h > 0)
+                if(playerPush.StopRight && h > 0)
                 {
                     TargetPos = transform.position;
                 }
-                else if(player.GetComponent<Playerpush>().StopLeft && h < 0)
+                else if(playerPush.StopLeft && h < 0)
                 {
                     TargetPos = transform.position;
                 }
@@ -74,13 +78,13 @@ public class Move : MonoBehaviour
                     StartCoroutine(MoveCooldown());
                 }
             }
-            else if (v != 0 && !(player.GetComponent<Playerpush>().SegurandoCaixahorizontal))
+            else if (v != 0 && !(playerPush.SegurandoCaixahorizontal))
             {
-                if (player.GetComponent<Playerpush>().StopUp && v > 0)
+                if (playerPush.StopUp && v > 0)
                 {
                     TargetPos = transform.position;
                 }
-                else if (player.GetComponent<Playerpush>().StopDown && v < 0)
+                else if (playerPush.StopDown && v < 0)
                 {
                     TargetPos = transform.position;
                 }
@@ -138,7 +142,7 @@ public class Move : MonoBehaviour
         }
 
         transform.position = TargetPos; //Tira o erro do movimento. -A
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(cooldown);
         Moving = false;
     }
 }
