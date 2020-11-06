@@ -10,6 +10,7 @@ public class Flash : MonoBehaviour
     public float tempoIluminado;
 
     public AudioSource flashSound;
+    public AudioSource heartbeat;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class Flash : MonoBehaviour
         if(Input.GetKeyDown(BotaoFlash))
         {
             flashSound.Play();
+            heartbeat.Play();
             StartCoroutine(Luz());
         }
     }
