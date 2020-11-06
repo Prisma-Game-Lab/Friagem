@@ -22,6 +22,10 @@ public class Move : MonoBehaviour
     public LayerMask StopmMovement;
     public GameObject player;
 
+    public AudioSource passo1;
+    public AudioSource passo2;
+    private int qualPasso = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +61,16 @@ public class Move : MonoBehaviour
                 
                 if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                 {
+                    if(qualPasso == 1)
+                    {
+                        qualPasso=2;
+                        passo1.Play();
+                    }
+                    else
+                    {
+                        qualPasso = 1;
+                        passo2.Play();
+                    }
                     StartCoroutine(MoveCooldown());
                 }
             }
@@ -76,6 +90,16 @@ public class Move : MonoBehaviour
                 }
                 if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                 {
+                    if (qualPasso == 1)
+                    {
+                        qualPasso = 2;
+                        passo1.Play();
+                    }
+                    else
+                    {
+                        qualPasso = 1;
+                        passo2.Play();
+                    }
                     StartCoroutine(MoveCooldown());
                 }
             }
