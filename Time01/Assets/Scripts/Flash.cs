@@ -9,6 +9,8 @@ public class Flash : MonoBehaviour
     public bool ilumina = false;
     public float tempoIluminado;
 
+    public AudioSource flashSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class Flash : MonoBehaviour
     {
         if(Input.GetKeyDown(BotaoFlash))
         {
+            flashSound.Play();
             StartCoroutine(Luz());
         }
     }
