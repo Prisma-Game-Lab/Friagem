@@ -21,8 +21,6 @@ public class Move : MonoBehaviour
     public float Speed;
     public float GridSize;
     public float cooldown;
-    public LayerMask StopmMovement;
-    public GameObject player;
 
     public AudioSource passo1;
     public AudioSource passo2;
@@ -36,7 +34,7 @@ public class Move : MonoBehaviour
         MoveHor = new Vector3(GridSize, 0f, 0f);
         MoveVer = new Vector3(0f, GridSize, 0f);
 
-        playerPush = player.GetComponent<Playerpush>();
+        playerPush = GetComponent<Playerpush>();
     }
 
     // Update is called once per frame

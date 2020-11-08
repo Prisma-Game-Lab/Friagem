@@ -15,7 +15,7 @@ public class Playerpush : MonoBehaviour
     [HideInInspector]
     public bool[] Stop;
 
-    GameObject box;
+    private GameObject box;
     public GameObject Player;
     // Start is called before the first frame update
     void Start()
