@@ -8,21 +8,19 @@ using UnityEngine.Tilemaps;
 //https://en.wikipedia.org/wiki/A*_search_algorithm
 public class Pathfinding2D 
 {
-    private Grid grid;
     private Tilemap walkableTiles;
 
-    public Pathfinding2D(Grid grid, Tilemap walkable)
+    public Pathfinding2D(Tilemap walkable)
     {
-        this.grid=grid;
         this.walkableTiles=walkable;
     } 
 
-    public List<Vector2> A_Star(Vector2 start, Vector2 finish)
+    public List<Vector3> A_Star(Vector3 start, Vector3 finish)
     {
-        List<Vector2> shortestPath;
+        List<Vector3> shortestPath;
 
-        Vector3Int gridStart = grid.WorldToCell(new Vector3(start.x,start.y,0));
-        Vector3Int gridFinish = grid.WorldToCell(new Vector3(finish.x,finish.y,0));
+        Vector3Int gridStart = walkableTiles.WorldToCell(new Vector3(start.x,start.y,0));
+        Vector3Int gridFinish = walkableTiles.WorldToCell(new Vector3(finish.x,finish.y,0));
 
         PriorityQueue<GridNode> queue = new PriorityQueue<GridNode>();
         GridNode startNode = new GridNode(walkableTiles,gridStart);
@@ -34,10 +32,11 @@ public class Pathfinding2D
             GridNode currentNode = queue.Dequeue();
             if(currentNode.pos == gridFinish)
             {
-                shortestPath = new List<Vector2>();
+                //Achou o destino
+                shortestPath = new List<Vector3>();
                 do
                 {
-                    shortestPath.Add(walkableTiles.CellToWorld(currentNode.pos));
+                    shortestPath.Insert(0,(walkableTiles.CellToWorld(currentNode.pos)) + new Vector3(0.5f,0.5f,0));
                     currentNode=currentNode.cameFrom;
                 } while (currentNode.cameFrom != null);
                 return shortestPath;
@@ -90,7 +89,7 @@ public class GridNode : IComparable<GridNode>
 
     int IComparable<GridNode>.CompareTo(GridNode other)
     {
-        return this.fScore - other.fScore;
+        return this.gScore - other.gScore;
     }
 
     public List<GridNode> GetNeighbors()
@@ -106,7 +105,7 @@ public class GridNode : IComparable<GridNode>
 
             for(int i=0; i<4;i++)
             {
-                if(walkableMap.HasTile(candidatos[i]))
+                if(walkableMap.HasTile(candidatos[i])) //verificar se tem caixa/monstros tambem
                 {
                     GridNode instance;
                     if(!allTiles.TryGetValue(candidatos[i],out instance))
