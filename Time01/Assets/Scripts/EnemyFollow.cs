@@ -50,7 +50,7 @@ public class EnemyFollow : MonoBehaviour
         foreach (Vector3 NextPos in path)
         {
             transform.position = NextPos; //Move para a direção alvo. -A
-            yield return new WaitForSeconds(1); 
+            yield return new WaitForSeconds(0.5f); 
         }
        
 
