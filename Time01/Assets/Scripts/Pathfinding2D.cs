@@ -36,7 +36,7 @@ public class Pathfinding2D
                 shortestPath = new List<Vector3>();
                 do
                 {
-                    shortestPath.Insert(0,(walkableTiles.CellToWorld(currentNode.pos)) + new Vector3(0.5f,0.5f,0));
+                    shortestPath.Insert(0,(walkableTiles.CellToWorld(currentNode.pos)) + new Vector3(2.0f,2.0f,0));
                     currentNode=currentNode.cameFrom;
                 } while (currentNode.cameFrom != null);
                 return shortestPath;
