@@ -1,7 +1,85 @@
 fileFormatVersion: 2
 guid: 21fd16ba2202e214892c3e09688cadf0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5756325069030817830
+    second: caverna_0
+  - first:
+      213: 1775816888841653637
+    second: caverna_1
+  - first:
+      213: 5331476770704643231
+    second: caverna_2
+  - first:
+      213: -3141619477298366493
+    second: caverna_3
+  - first:
+      213: 2911252655115790180
+    second: caverna_4
+  - first:
+      213: -7314032314828961721
+    second: caverna_5
+  - first:
+      213: -1183753604744879653
+    second: caverna_6
+  - first:
+      213: 2238079587386498760
+    second: caverna_7
+  - first:
+      213: -8609929571555126198
+    second: caverna_8
+  - first:
+      213: 3159080762630847084
+    second: caverna_9
+  - first:
+      213: 1890203342603829353
+    second: caverna_10
+  - first:
+      213: -2024670558556737735
+    second: caverna_11
+  - first:
+      213: -4247934267542226026
+    second: caverna_12
+  - first:
+      213: 1178074730787962200
+    second: caverna_13
+  - first:
+      213: 3671549365645923339
+    second: caverna_14
+  - first:
+      213: 6691986743382817140
+    second: caverna_15
+  - first:
+      213: 8934626258660488215
+    second: caverna_16
+  - first:
+      213: -7191927936278971557
+    second: caverna_17
+  - first:
+      213: 2150516305926598480
+    second: caverna_18
+  - first:
+      213: -4881527744032270373
+    second: caverna_19
+  - first:
+      213: 4723310062601397018
+    second: caverna_20
+  - first:
+      213: -2926890051619450465
+    second: caverna_21
+  - first:
+      213: 5048706331516283738
+    second: caverna_22
+  - first:
+      213: -5890587940445772404
+    second: caverna_23
+  - first:
+      213: 6101818434002082212
+    second: caverna_24
+  - first:
+      213: -745868172334042294
+    second: caverna_25
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -45,7 +123,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +142,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -76,7 +154,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,11 +163,557 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: caverna_0
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 850
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6200247e62392ef40800000000000000
+      internalID: 5756325069030817830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 880
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dcb8d3d08f4a810800000000000000
+      internalID: 1775816888841653637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_2
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 641
+        width: 151
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94d81620e53df940800000000000000
+      internalID: 5331476770704643231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 640
+        width: 140
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7be2cfab9b664d0800000000000000
+      internalID: -3141619477298366493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_4
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 640
+        width: 160
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467e6978dd8d66820800000000000000
+      internalID: 2911252655115790180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_5
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 640
+        width: 160
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74844ee6c565f7a90800000000000000
+      internalID: -7314032314828961721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 860
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1e7974e56729fe0800000000000000
+      internalID: -1183753604744879653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 640
+        width: 120
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce9931e6814f0f10800000000000000
+      internalID: 2238079587386498760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 560
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44535a0ca2638880800000000000000
+      internalID: -8609929571555126198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_9
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 319
+        width: 218
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ab161573f47db20800000000000000
+      internalID: 3159080762630847084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_10
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 317
+        width: 212
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9604825ece95b3a10800000000000000
+      internalID: 1890203342603829353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_11
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 319
+        width: 232
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fa80aaadce6e3e0800000000000000
+      internalID: -2024670558556737735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_12
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 320
+        width: 210
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69bbfe94a4e4c05c0800000000000000
+      internalID: -4247934267542226026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 410
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85dfa77d9bc595010800000000000000
+      internalID: 1178074730787962200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_14
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 410
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04d2a202b6f3f230800000000000000
+      internalID: 3671549365645923339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_15
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 410
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479b4f8cc76bedc50800000000000000
+      internalID: 6691986743382817140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_16
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 410
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714f55c9e3b2efb70800000000000000
+      internalID: 8934626258660488215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 240
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b32eb75a3213c90800000000000000
+      internalID: -7191927936278971557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_18
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 4
+        width: 221
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fa072bf2b28dd10800000000000000
+      internalID: 2150516305926598480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_19
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 212
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd71eb75164514cb0800000000000000
+      internalID: -4881527744032270373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_20
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2
+        width: 229
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13626d0a719c8140800000000000000
+      internalID: 4723310062601397018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_21
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 0
+        width: 210
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91199061099167d0800000000000000
+      internalID: -2926890051619450465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 90
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b2b49c8ab901640800000000000000
+      internalID: 5048706331516283738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_23
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 90
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85a7835a7d604ea0800000000000000
+      internalID: -5890587940445772404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_24
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 90
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9df9279830ea450800000000000000
+      internalID: 6101818434002082212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caverna_25
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 90
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4372ca59d426a5f0800000000000000
+      internalID: -745868172334042294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: aac985796c9785f449b79d6475d0e8d3
     internalID: 0
     vertices: []
     indices: 
