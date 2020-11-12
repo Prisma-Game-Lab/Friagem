@@ -3315,7 +3315,7 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
+  BypassEffects: 1
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
@@ -3719,7 +3719,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 66b483b686172a34f89c6118d29d00f6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3848,7 +3848,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c39b02c906165084aa7c114e72eb47da, type: 3}
+  m_audioClip: {fileID: 8300000, guid: acd03c49123b0a34aaca077971378cf7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
