@@ -13,14 +13,15 @@ public class Pathfinding2D
     public Pathfinding2D(Tilemap walkable)
     {
         this.walkableTiles=walkable;
+        GridNode.allTiles = new Dictionary<Vector3Int, GridNode>();
     } 
 
     public List<Vector3> A_Star(Vector3 start, Vector3 finish)
     {
         List<Vector3> shortestPath;
 
-        Vector3Int gridStart = walkableTiles.WorldToCell(new Vector3(start.x,start.y,0));
-        Vector3Int gridFinish = walkableTiles.WorldToCell(new Vector3(finish.x,finish.y,0));
+        Vector3Int gridStart = walkableTiles.WorldToCell(start);
+        Vector3Int gridFinish = walkableTiles.WorldToCell(finish);
 
         PriorityQueue<GridNode> queue = new PriorityQueue<GridNode>();
         GridNode startNode = new GridNode(walkableTiles,gridStart);
@@ -34,11 +35,11 @@ public class Pathfinding2D
             {
                 //Achou o destino
                 shortestPath = new List<Vector3>();
-                do
+                while (currentNode.cameFrom != null)
                 {
                     shortestPath.Insert(0,(walkableTiles.CellToWorld(currentNode.pos)) + new Vector3(2.0f,2.0f,0));
                     currentNode=currentNode.cameFrom;
-                } while (currentNode.cameFrom != null);
+                } 
                 return shortestPath;
             }
             List<GridNode> neighbors = currentNode.GetNeighbors();
@@ -49,6 +50,7 @@ public class Pathfinding2D
                 {
                     n.gScore=novoGScore;
                     n.cameFrom=currentNode;
+                    n.fScore = novoGScore + Mathf.Abs(gridFinish.x - n.pos.x);
 
                     if(!queue.Contains(n))
                     {
@@ -74,7 +76,7 @@ public class GridNode : IComparable<GridNode>
     private Tilemap walkableMap;
     private List<GridNode> neighbors;
 
-    static Dictionary<Vector3Int, GridNode> allTiles = new Dictionary<Vector3Int, GridNode>();
+    public static Dictionary<Vector3Int, GridNode> allTiles = new Dictionary<Vector3Int, GridNode>();
 
     public GridNode(Tilemap tileMap, Vector3Int pos)
     {
@@ -89,7 +91,7 @@ public class GridNode : IComparable<GridNode>
 
     int IComparable<GridNode>.CompareTo(GridNode other)
     {
-        return this.gScore - other.gScore;
+        return this.fScore - other.fScore;
     }
 
     public List<GridNode> GetNeighbors()
