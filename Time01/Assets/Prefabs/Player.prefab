@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 3448317869200438001}
   - component: {fileID: 3448317869200438006}
-  - component: {fileID: 3448317869200438007}
   - component: {fileID: 1140673002684209710}
-  - component: {fileID: 382430723022428210}
   - component: {fileID: 1897270041}
   - component: {fileID: 1897270030}
   - component: {fileID: 1897270031}
   - component: {fileID: 1897270032}
   - component: {fileID: 1897270038}
+  - component: {fileID: 3448317869200438007}
+  - component: {fileID: 382430723022428210}
   - component: {fileID: 1897270033}
   - component: {fileID: 1897270035}
   m_Layer: 9
@@ -92,25 +92,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3448317869200438007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3448317869200438004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f9f5bb72abf974889afedf7681df7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ground: {fileID: 0}
-  obstaculos: {fileID: 0}
-  Speed: 50
-  GridSize: 4
-  cooldown: 0.2
-  passo1: {fileID: 1897270031}
-  passo2: {fileID: 1897270030}
 --- !u!61 &1140673002684209710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,24 +118,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8, y: 8}
   m_EdgeRadius: 0
---- !u!114 &382430723022428210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3448317869200438004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7fabdad2b84e914a93e1feee825d66c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BotaoFlash: space
-  ilumina: 0
-  tempoIluminado: 5
-  posFlash: {x: 0, y: 0, z: 0}
-  flashSound: {fileID: 1897270038}
-  heartbeat: {fileID: 1897270032}
 --- !u!50 &1897270041
 Rigidbody2D:
   serializedVersion: 4
@@ -560,6 +523,43 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3448317869200438007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3448317869200438004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f9f5bb72abf974889afedf7681df7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ground: {fileID: 0}
+  obstaculos: {fileID: 0}
+  Speed: 50
+  GridSize: 4
+  cooldown: 0.2
+  passo1: {fileID: 1897270031}
+  passo2: {fileID: 1897270030}
+--- !u!114 &382430723022428210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3448317869200438004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fabdad2b84e914a93e1feee825d66c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotaoFlash: space
+  ilumina: 0
+  tempoIluminado: 5
+  posFlash: {x: 0, y: 0, z: 0}
+  flashSound: {fileID: 1897270038}
+  heartbeat: {fileID: 1897270032}
 --- !u!114 &1897270033
 MonoBehaviour:
   m_ObjectHideFlags: 0
