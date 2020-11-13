@@ -55,10 +55,10 @@ public class Playerpush : MonoBehaviour
                 SegurandoCaixahorizontal = false;
                 SegurandoCaixavertical = false;
             }
-            else if (hits[i].collider != null && hits[i].collider.gameObject.tag == "Box")
+            else if (hits[i].collider != null && (hits[i].collider.gameObject.tag == "Box" || hits[i].collider.gameObject.tag == "Wall"))
             {
                 Stop[i] = true;
-                if (Input.GetKey(BotaoCaixa))
+                if (Input.GetKey(BotaoCaixa) && hits[i].collider.gameObject.tag == "Box")
                 {
                     Stop[i] = false;
                 }
