@@ -48,6 +48,11 @@ public class Playerpush : MonoBehaviour
                 {
                     SegurandoCaixavertical = true;
                 }
+
+                if(box != null)
+                {
+                    return;
+                }
             }
             else if (hits[i].collider != null && hits[i].collider.gameObject.tag == "Box" && Input.GetKeyUp(BotaoCaixa))
             {
