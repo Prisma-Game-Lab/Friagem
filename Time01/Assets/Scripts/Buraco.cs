@@ -17,11 +17,10 @@ public class Buraco : MonoBehaviour
     {
         if(collision.collider.CompareTag("Box"))
         {
-            gameObject.SetActive(false);
-            collision.gameObject.SetActive(false);
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
             playerPush.SegurandoCaixahorizontal = false;
             playerPush.SegurandoCaixavertical = false;
-            collision.gameObject.transform.SetParent(null);
         }
     }
 }
