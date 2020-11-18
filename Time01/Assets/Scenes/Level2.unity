@@ -3420,6 +3420,21 @@ PrefabInstance:
       propertyPath: tempoIluminado
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 382430723022428210, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+        type: 3}
+      propertyPath: sistemaDeCargas
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382430723022428210, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+        type: 3}
+      propertyPath: totalFlares
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 382430723022428210, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+        type: 3}
+      propertyPath: tempoDeRecarga
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1140673002684209710, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: m_Size.x
