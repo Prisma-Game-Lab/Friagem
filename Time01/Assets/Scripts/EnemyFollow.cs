@@ -14,8 +14,8 @@ public class EnemyFollow : MonoBehaviour
 
 
     private bool Moving = false;
-
     private Flash flash;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +25,8 @@ public class EnemyFollow : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
-        if(!Moving)
+    {        
+        if (!Moving)
         {
             StartCoroutine(MoveCooldown(player.transform.position));
         }
@@ -41,10 +41,17 @@ public class EnemyFollow : MonoBehaviour
         List<Vector3> path = new Pathfinding2D(ground).A_Star(myPos,target);
         foreach (Vector3 NextPos in path)
         {
-            if(!flash.ilumina)
+            if(player.transform.position != target)
             {
-                transform.position = NextPos; //Move para a direção alvo. -A
-                yield return new WaitForSeconds(0.5f);
+                path = new Pathfinding2D(ground).A_Star(myPos, target);
+            }
+            else
+            {
+                if (!flash.ilumina)
+                {
+                    transform.position = NextPos; //Move para a direção alvo. -A
+                    yield return new WaitForSeconds(0.5f);
+                }
             }
         }
        
