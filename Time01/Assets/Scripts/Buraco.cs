@@ -21,6 +21,7 @@ public class Buraco : MonoBehaviour
             collision.gameObject.SetActive(false);
             playerPush.SegurandoCaixahorizontal = false;
             playerPush.SegurandoCaixavertical = false;
+            collision.gameObject.transform.SetParent(null);
         }
     }
 }
