@@ -28,6 +28,7 @@ public class Pathfinding2D
         startNode.gScore=0;
         startNode.cameFrom=null;
         queue.Enqueue(startNode);
+        GridNode bestNode = startNode;
         while(queue.Count()>0)
         {
             GridNode currentNode = queue.Dequeue();
@@ -58,8 +59,19 @@ public class Pathfinding2D
                     }
                 }
             }
+            if (bestNode.fScore - currentNode.fScore > 0)
+            {
+                bestNode = currentNode;
+            }
         }
-        return null;
+        //Caso nao tenha caminho vai para a melhor posicao encontrada
+        shortestPath = new List<Vector3>();
+        while (bestNode.cameFrom != null)
+        {
+            shortestPath.Insert(0, (walkableTiles.CellToWorld(bestNode.pos)) + new Vector3(2.0f, 2.0f, 0));
+            bestNode = bestNode.cameFrom;
+        }
+        return shortestPath;
     }
 }
 

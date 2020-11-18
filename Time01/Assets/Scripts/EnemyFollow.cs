@@ -50,7 +50,7 @@ public class EnemyFollow : MonoBehaviour
                 if (!flash.ilumina)
                 {
                     transform.position = NextPos; //Move para a direção alvo. -A
-                    yield return new WaitForSeconds(0.5f);
+                    yield return new WaitForSeconds(Speed);
                 }
             }
         }

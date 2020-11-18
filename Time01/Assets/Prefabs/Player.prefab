@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 2378627061014293192, guid: b6213dbab51a0124e9402f5b307230ba,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -557,8 +557,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BotaoFlash: space
   ilumina: 0
+  sistemaDeCargas: 0
   tempoIluminado: 5
+  tempoDeRecarga: 0
   posFlash: {x: 0, y: 0, z: 0}
+  totalFlares: 0
   flashSound: {fileID: 1897270038}
   heartbeat: {fileID: 1897270032}
 --- !u!114 &1897270033
