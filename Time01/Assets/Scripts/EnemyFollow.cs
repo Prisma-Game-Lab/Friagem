@@ -14,29 +14,21 @@ public class EnemyFollow : MonoBehaviour
 
 
     private bool Moving = false;
-    private Vector3 NextPos;
 
-    private NavMeshAgent agent;
     private Flash flash;
 
     // Start is called before the first frame update
     void Start()
     {
-        //agent = GetComponent<NavMeshAgent>();
-        //agent.updateRotation = false;
-        //agent.updateUpAxis = false;
-
         flash = player.GetComponent<Flash>();
     }
 
     // Update is called once per frame
     void Update()
     {   
-        if(flash.ilumina && !Moving)
+        if(!Moving)
         {
-            //agent.SetDestination(flash.posFlash);
-            Moving=true;
-            StartCoroutine(MoveCooldown(flash.posFlash));
+            StartCoroutine(MoveCooldown(player.transform.position));
         }
     }
 
@@ -49,8 +41,11 @@ public class EnemyFollow : MonoBehaviour
         List<Vector3> path = new Pathfinding2D(ground).A_Star(myPos,target);
         foreach (Vector3 NextPos in path)
         {
-            transform.position = NextPos; //Move para a direção alvo. -A
-            yield return new WaitForSeconds(0.5f); 
+            if(!flash.ilumina)
+            {
+                transform.position = NextPos; //Move para a direção alvo. -A
+                yield return new WaitForSeconds(0.5f);
+            }
         }
        
 
