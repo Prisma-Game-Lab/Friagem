@@ -26,7 +26,7 @@ public class GameControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Finish"))
+        if(collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(NextLevel, LoadSceneMode.Single);
         }

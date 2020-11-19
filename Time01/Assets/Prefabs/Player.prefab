@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 1897270038}
   - component: {fileID: 3448317869200438007}
   - component: {fileID: 382430723022428210}
-  - component: {fileID: 1897270033}
   - component: {fileID: 1897270035}
   - component: {fileID: 3854191670502202336}
   m_Layer: 9
@@ -562,22 +561,11 @@ MonoBehaviour:
   tempoDeRecarga: 0
   posFlash: {x: 0, y: 0, z: 0}
   totalFlares: 0
+  Flare: {fileID: 0}
+  Lanterna: {fileID: 0}
   flashSound: {fileID: 1897270038}
   heartbeat: {fileID: 1897270032}
---- !u!114 &1897270033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3448317869200438004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a328e2df1b3481943abb4655587e3140, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BotaoRestart: r
-  NextLevel: Level2
+  flareText: {fileID: 0}
 --- !u!114 &1897270035
 MonoBehaviour:
   m_ObjectHideFlags: 0
