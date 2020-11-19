@@ -26,9 +26,14 @@ public class Pathfinding2D
         PriorityQueue<GridNode> queue = new PriorityQueue<GridNode>();
         GridNode startNode = new GridNode(walkableTiles,gridStart);
         startNode.gScore=0;
+        startNode.fScore=Mathf.Abs(gridFinish.x - startNode.pos.x);
         startNode.cameFrom=null;
         queue.Enqueue(startNode);
+
         GridNode bestNode = startNode;
+        int bestXDistance = Mathf.Abs(gridFinish.x - startNode.pos.x);
+        int bestYDistance = Mathf.Abs(gridFinish.y - startNode.pos.y);
+
         while(queue.Count()>0)
         {
             GridNode currentNode = queue.Dequeue();
@@ -59,9 +64,18 @@ public class Pathfinding2D
                     }
                 }
             }
-            if (bestNode.fScore - currentNode.fScore > 0)
+            int currentXDistance = Mathf.Abs(gridFinish.x - currentNode.pos.x);
+            if (bestXDistance - currentXDistance >= 0)
             {
-                bestNode = currentNode;
+                int currentYDistance = Mathf.Abs(gridFinish.y - currentNode.pos.y);
+                if((currentXDistance == bestXDistance && currentYDistance < bestYDistance)
+                    || currentXDistance < bestXDistance)
+                {
+                    bestNode = currentNode;
+                    bestXDistance = currentXDistance;
+                    bestYDistance = currentYDistance;
+                }
+                
             }
         }
         //Caso nao tenha caminho vai para a melhor posicao encontrada
