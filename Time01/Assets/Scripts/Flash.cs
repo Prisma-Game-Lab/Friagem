@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Flash : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Flash : MonoBehaviour
 
     public AudioSource flashSound;
     public AudioSource heartbeat;
+    public TextMeshProUGUI flareText;
 
     private int numFlares;
     private bool carregado = true;
@@ -24,6 +26,7 @@ public class Flash : MonoBehaviour
     void Start()
     {
         numFlares = totalFlares;
+        flareText.text = "Level Flares: " + numFlares.ToString();
     }
 
     // Update is called once per frame
@@ -42,6 +45,7 @@ public class Flash : MonoBehaviour
                heartbeat.Play();
                StartCoroutine(Luz());
                numFlares = numFlares - 1;
+               flareText.text = "Level Flares: " + numFlares.ToString();
                Debug.Log(numFlares); 
         }
     }
