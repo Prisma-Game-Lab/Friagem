@@ -111,9 +111,9 @@ public class Move : MonoBehaviour
     private bool CanMove(Vector3 direction)
     {
         Vector3Int gridPos = ground.WorldToCell(direction);
-        if (transform.childCount != 0)
+        if (transform.childCount > 1)
         {
-            Vector3 childDir =  transform.GetChild(0).position;
+            Vector3 childDir =  transform.GetChild(1).position;
             direction -= transform.position;
             direction += childDir;
             Vector3Int childGridPos = ground.WorldToCell(direction);
