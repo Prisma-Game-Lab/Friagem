@@ -13,7 +13,9 @@ public class Flash : MonoBehaviour
     public float tempoDeRecarga;
     public Vector3 posFlash;
     public int totalFlares;
-    
+
+    public GameObject Flare;
+    public GameObject Lanterna;
 
     public AudioSource flashSound;
     public AudioSource heartbeat;
@@ -55,8 +57,12 @@ public class Flash : MonoBehaviour
         Debug.Log("Flash");
         posFlash = transform.position;
         ilumina = true;
+        Flare.SetActive(true);
+        Lanterna.SetActive(false);
         yield return new WaitForSeconds(tempoIluminado);
         ilumina = false;
+        Flare.SetActive(false);
+        Lanterna.SetActive(true);
     }
     private IEnumerator FlareCoolDown()
     {
