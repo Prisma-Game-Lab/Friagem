@@ -39,6 +39,7 @@ public class EnemyFollow : MonoBehaviour
         /*A forma mais eficiente é rodar isso a partir da posicao do flash*/
         Vector3 myPos=transform.position;
         List<Vector3> path = new Pathfinding2D(ground).A_Star(myPos,target);
+
         foreach (Vector3 NextPos in path)
         {
             if(player.transform.position != target)
@@ -50,23 +51,12 @@ public class EnemyFollow : MonoBehaviour
                 if (!flash.ilumina)
                 {
                     transform.position = NextPos; //Move para a direção alvo. -A
+                   
                     yield return new WaitForSeconds(Speed);
                 }
             }
         }
-       
-
-        //transform.position = NextPos; //Tira o erro do movimento. -A
 
         Moving = false;
     }
 }
-
-/*
-^^^^^^^^^^ 
-caminho = []
-while(iluminado)
-    move para caminho[i]
-    i+=1
-    espera x segundos
-*/
