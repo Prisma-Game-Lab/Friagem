@@ -34,21 +34,23 @@ public class Flash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(BotaoFlash) && !sistemaDeCargas && carregado)//numero de flares ilimitados com tempo para recarga
+        if(Input.GetKeyDown(BotaoFlash))
         {
             flashSound.Play();
             heartbeat.Play();
-            StartCoroutine(Luz());
-            StartCoroutine(FlareCoolDown());
-        }
-        else if(Input.GetKeyDown(BotaoFlash) && sistemaDeCargas && numFlares > 0)//numero de flares limitados
-        {
-               flashSound.Play();
-               heartbeat.Play();
-               StartCoroutine(Luz());
-               numFlares = numFlares - 1;
-               flareText.text = "Level Flares: " + numFlares.ToString();
-               Debug.Log(numFlares); 
+
+            if(!sistemaDeCargas && carregado)
+            {
+                StartCoroutine(FlareCoolDown());
+                StartCoroutine(Luz());
+            }
+            else if(sistemaDeCargas && numFlares > 0)
+            {
+                StartCoroutine(Luz());
+                numFlares = numFlares - 1;
+                flareText.text = "Level Flares: " + numFlares.ToString();
+                Debug.Log(numFlares);
+            }
         }
     }
 
