@@ -5,9 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+
+    void Start()
+    {
+        //GetComponent<PauseMenu>().fromGame = false; Está dando erro
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        
     }
 
     public void QuitGame()

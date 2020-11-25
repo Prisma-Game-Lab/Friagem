@@ -6,18 +6,15 @@ using UnityEngine.SceneManagement;
 public class SettingsMenu : MonoBehaviour
 {
 
-    public bool fromGame = false;
-
     public void QuitMenu()
     {
-        if (!fromGame)
+        /*if (!GetComponent<PauseMenu>().fromGame) está dando erro
         {
             SceneManager.LoadScene("Main Menu");
         }
-        /*else
+        else
         {
-            SceneManager.LoadScene("Pause Menu");
-        }
-        */
+            SceneManager.LoadScene(GetComponent<PauseMenu>().level);
+        }*/
     }
 }
