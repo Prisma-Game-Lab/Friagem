@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public bool paused = false;
+    
     public string pauseButton;
     public GameObject PauseMenuUI;
     public GameObject SettingsMenuUI;
-   
 
+    private bool paused = false;
     // Update is called once per frame
     void Update()
     {
