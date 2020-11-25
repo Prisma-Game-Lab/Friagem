@@ -6,15 +6,12 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
-
-    void Start()
-    {
-        //GetComponent<PauseMenu>().fromGame = false; Está dando erro
-    }
+    public GameObject SettingsMenuUI;
+    public GameObject MainMenuUI;
 
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
     }
 
@@ -26,6 +23,13 @@ public class MainMenu : MonoBehaviour
 
     public void OpenSettings()
     {
-        SceneManager.LoadScene("Settings Menu");
+        SettingsMenuUI.SetActive(true);
+        MainMenuUI.SetActive(false);
+    }
+
+    public void QuitSettingsMenu()
+    {
+        SettingsMenuUI.SetActive(false);
+        MainMenuUI.SetActive(true);
     }
 }
