@@ -118,10 +118,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2465269325807948260, guid: 73cedcfccc3b90647bbb53ebec5b657e,
         type: 3}
+    - target: {fileID: 578698102078779294, guid: 20254e8ea098fbc4c9d40887dc61a4ab,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ab1725f5faedb548a4515d16c65a6b2, type: 2}
     - target: {fileID: 578698102078779295, guid: 20254e8ea098fbc4c9d40887dc61a4ab,
         type: 3}
       propertyPath: m_Name
-      value: Buraco (73)
+      value: Buraco (73) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20254e8ea098fbc4c9d40887dc61a4ab, type: 3}
