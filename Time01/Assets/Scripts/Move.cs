@@ -25,6 +25,7 @@ public class Move : MonoBehaviour
     public AudioSource passo1;
     public AudioSource passo2;
     private int qualPasso = 1;
+    private Animator anim;
 
 
     // Start is called before the first frame update
@@ -35,6 +36,7 @@ public class Move : MonoBehaviour
         MoveVer = new Vector3(0f, GridSize, 0f);
 
         playerPush = GetComponent<Playerpush>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -58,6 +60,8 @@ public class Move : MonoBehaviour
                 }
                 else
                 {
+                    anim.SetFloat("Horizontal", h);
+                    anim.SetFloat("Vertical", 0f);
                     TargetPos = transform.position + h * MoveHor;
                 }
                 
@@ -88,6 +92,8 @@ public class Move : MonoBehaviour
                 }
                 else
                 {
+                    anim.SetFloat("Vertical", v);
+                    anim.SetFloat("Horizontal", 0f);
                     TargetPos = transform.position + v * MoveVer;
                 }
                 if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
@@ -133,6 +139,7 @@ public class Move : MonoBehaviour
     private IEnumerator MoveCooldown()
     {
         Moving = true;
+        anim.SetBool("andando", true);
         while(transform.position != TargetPos)
         {
             transform.position = Vector3.Lerp(transform.position, TargetPos, Speed * Time.deltaTime); //Move para a direção alvo. -A
@@ -142,5 +149,6 @@ public class Move : MonoBehaviour
         transform.position = TargetPos; //Tira o erro do movimento. -A
         yield return new WaitForSeconds(cooldown);
         Moving = false;
+        anim.SetBool("andando", false);
     }
 }
