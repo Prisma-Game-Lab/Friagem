@@ -12,7 +12,7 @@ public class Playerpush : MonoBehaviour
     public bool SegurandoCaixavertical = false;
 
     //variaveis para verificar se as casas adjacentes estão ocupadas
-    [HideInInspector]
+    //[HideInInspector]
     public bool[] Stop;
 
     private GameObject box;
