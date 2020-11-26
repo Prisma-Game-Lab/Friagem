@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Settings Menu.unity
     guid: e5e786ec53669fe45a3cab2fab9e96c3
   - enabled: 1
-    path: Assets/Scenes/Level Mark/mark level 5.unity
+    path: Assets/Scenes/Gusta level1.unity
     guid: 288706cd6a1c55741803f1ba98ca173d
   - enabled: 1
     path: Assets/Scenes/Level Mark/mark level 2.unity
