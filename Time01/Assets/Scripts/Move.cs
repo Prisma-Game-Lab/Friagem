@@ -46,56 +46,25 @@ public class Move : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
 
-        if(!Moving)
+        RaycastHit2D hitH = Physics2D.Raycast(transform.position, h * MoveHor, playerPush.distance, playerPush.boxMask);
+        RaycastHit2D hitV = Physics2D.Raycast(transform.position, v * MoveVer, playerPush.distance, playerPush.boxMask);
+
+
+        if (!Moving)
         {
             if (h != 0 && !(playerPush.SegurandoCaixavertical))
             {
-                if(playerPush.Stop[0] && h > 0)
-                {
-                    TargetPos = transform.position;
-                }
-                else if(playerPush.Stop[1] && h < 0)
+                anim.SetFloat("Horizontal", h);
+                anim.SetFloat("Vertical", 0f);
+                if (hitH.collider != null && (hitH.collider.gameObject.tag == "Box" || hitH.collider.gameObject.tag == "Wall"))
                 {
                     TargetPos = transform.position;
                 }
                 else
                 {
-                    anim.SetFloat("Horizontal", h);
-                    anim.SetFloat("Vertical", 0f);
                     TargetPos = transform.position + h * MoveHor;
                 }
-                
-                if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
-                {
-                    if(qualPasso == 1)
-                    {
-                        qualPasso=2;
-                        passo1.Play();
-                    }
-                    else
-                    {
-                        qualPasso = 1;
-                        passo2.Play();
-                    }
-                    StartCoroutine(MoveCooldown());
-                }
-            }
-            else if (v != 0 && !(playerPush.SegurandoCaixahorizontal))
-            {
-                if (playerPush.Stop[2] && v > 0)
-                {
-                    TargetPos = transform.position;
-                }
-                else if (playerPush.Stop[3] && v < 0)
-                {
-                    TargetPos = transform.position;
-                }
-                else
-                {
-                    anim.SetFloat("Vertical", v);
-                    anim.SetFloat("Horizontal", 0f);
-                    TargetPos = transform.position + v * MoveVer;
-                }
+
                 if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                 {
                     if (qualPasso == 1)
@@ -111,12 +80,41 @@ public class Move : MonoBehaviour
                     StartCoroutine(MoveCooldown());
                 }
             }
-        }       
+            else if (v != 0 && !(playerPush.SegurandoCaixahorizontal))
+            {
+                anim.SetFloat("Vertical", v);
+                anim.SetFloat("Horizontal", 0f);
+                if (hitV.collider != null && (hitV.collider.gameObject.tag == "Box" || hitV.collider.gameObject.tag == "Wall"))
+                {
+                    TargetPos = transform.position;
+                }
+                else
+                {
+                    TargetPos = transform.position + v * MoveVer;
+                }
+
+                if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
+                {
+                    if (qualPasso == 1)
+                    {
+                        qualPasso = 2;
+                        passo1.Play();
+                    }
+                    else
+                    {
+                        qualPasso = 1;
+                        passo2.Play();
+                    }
+                    StartCoroutine(MoveCooldown());
+                }
+            }
+        }
     }
 
     private bool CanMove(Vector3 direction)
     {
         Vector3Int gridPos = ground.WorldToCell(direction);
+
         if (transform.childCount > 1)
         {
             Vector3 childDir =  transform.GetChild(1).position;

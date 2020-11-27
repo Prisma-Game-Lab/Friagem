@@ -3773,7 +3773,7 @@ PrefabInstance:
     - target: {fileID: 1108322538541302619, guid: e84919f68c430754390bf7d9f4a77d7e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1108322538541302619, guid: e84919f68c430754390bf7d9f4a77d7e,
         type: 3}
@@ -9817,6 +9817,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 48198047}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1539300540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2505430204482320012, guid: 7d4403fa36c88a84b8397077860aee37,
+    type: 3}
+  m_PrefabInstance: {fileID: 1825688093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1539300544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539300540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c368e89778338f94b968ec83811bff2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
 --- !u!1001 &1605523399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10255,36 +10274,6 @@ PrefabInstance:
       propertyPath: Lanterna
       value: 
       objectReference: {fileID: 117048355}
-    - target: {fileID: 1140673002684209710, guid: 40ae3ab7655f4f2468369b0f7ee41340,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140673002684209710, guid: 40ae3ab7655f4f2468369b0f7ee41340,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140673002684209710, guid: 40ae3ab7655f4f2468369b0f7ee41340,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 20.125
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140673002684209710, guid: 40ae3ab7655f4f2468369b0f7ee41340,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 36.375
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140673002684209710, guid: 40ae3ab7655f4f2468369b0f7ee41340,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1140673002684209710, guid: 40ae3ab7655f4f2468369b0f7ee41340,
-        type: 3}
-      propertyPath: m_AutoTiling
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3448317869200438001, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: m_LocalPosition.x

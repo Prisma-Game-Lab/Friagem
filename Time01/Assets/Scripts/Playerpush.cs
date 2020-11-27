@@ -40,6 +40,7 @@ public class Playerpush : MonoBehaviour
                 box = hits[i].collider.gameObject;
                 Debug.Log(hits[i].collider.name);
                 box.transform.SetParent(Player.transform);
+                box.tag = "Untagged";
                 if (hits[i] == hitRight || hits[i] == hitLeft)
                 {
                     SegurandoCaixahorizontal = true;
@@ -54,23 +55,12 @@ public class Playerpush : MonoBehaviour
                     return;
                 }
             }
-            else if (hits[i].collider != null && hits[i].collider.gameObject.tag == "Box" && Input.GetKeyUp(BotaoCaixa))
+            else if (hits[i].collider != null && hits[i].collider.gameObject.tag == "Untagged" && Input.GetKeyUp(BotaoCaixa))
             {
                 box.transform.SetParent(null);
                 SegurandoCaixahorizontal = false;
                 SegurandoCaixavertical = false;
-            }
-            else if (hits[i].collider != null && (hits[i].collider.gameObject.tag == "Box" || hits[i].collider.gameObject.tag == "Wall"))
-            {
-                Stop[i] = true;
-                if (Input.GetKey(BotaoCaixa) && hits[i].collider.gameObject.tag == "Box")
-                {
-                    Stop[i] = false;
-                }
-            }
-            else
-            {
-                Stop[i] = false;
+                hits[i].collider.gameObject.tag = "Box";
             }
         }
     }
