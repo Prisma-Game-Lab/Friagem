@@ -21,10 +21,9 @@ public class Move : MonoBehaviour
     public float Speed;
     public float GridSize;
     public float cooldown;
-
-    public AudioSource passo1;
-    public AudioSource passo2;
-    private int qualPasso = 1;
+    public List<AudioSource> passos;
+    private int lastPasso = -1;
+    public AudioSource colisaoSound;
     private Animator anim;
 
 
@@ -67,17 +66,15 @@ public class Move : MonoBehaviour
 
                 if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                 {
-                    if (qualPasso == 1)
-                    {
-                        qualPasso = 2;
-                        passo1.Play();
-                    }
-                    else
-                    {
-                        qualPasso = 1;
-                        passo2.Play();
-                    }
+                    PlayStepSound();
                     StartCoroutine(MoveCooldown());
+                }
+                else
+                {
+                    if(!colisaoSound.isPlaying)
+                    {
+                        colisaoSound.Play();
+                    }
                 }
             }
             else if (v != 0 && !(playerPush.SegurandoCaixahorizontal))
@@ -95,17 +92,15 @@ public class Move : MonoBehaviour
 
                 if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                 {
-                    if (qualPasso == 1)
-                    {
-                        qualPasso = 2;
-                        passo1.Play();
-                    }
-                    else
-                    {
-                        qualPasso = 1;
-                        passo2.Play();
-                    }
+                    PlayStepSound();
                     StartCoroutine(MoveCooldown());
+                }
+                else
+                {
+                    if(!colisaoSound.isPlaying)
+                    {
+                        colisaoSound.Play();
+                    }
                 }
             }
         }
@@ -148,5 +143,17 @@ public class Move : MonoBehaviour
         yield return new WaitForSeconds(cooldown);
         Moving = false;
         anim.SetBool("andando", false);
+    }
+
+    private void PlayStepSound()
+    {
+        int qualPasso = Random.Range(0,passos.Count);
+        if(qualPasso == lastPasso)
+        {
+            qualPasso += 1;
+            qualPasso = qualPasso%passos.Count;
+        }
+        lastPasso = qualPasso;
+        passos[qualPasso].Play();
     }
 }
