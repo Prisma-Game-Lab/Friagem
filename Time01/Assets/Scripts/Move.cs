@@ -71,7 +71,10 @@ public class Move : MonoBehaviour
                 }
                 else
                 {
-                    colisaoSound.Play();
+                    if(!colisaoSound.isPlaying)
+                    {
+                        colisaoSound.Play();
+                    }
                 }
             }
             else if (v != 0 && !(playerPush.SegurandoCaixahorizontal))
@@ -94,7 +97,10 @@ public class Move : MonoBehaviour
                 }
                 else
                 {
-                    colisaoSound.Play();
+                    if(!colisaoSound.isPlaying)
+                    {
+                        colisaoSound.Play();
+                    }
                 }
             }
         }
