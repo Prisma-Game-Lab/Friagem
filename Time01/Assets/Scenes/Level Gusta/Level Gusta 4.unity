@@ -198,6 +198,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &3207959 stripped
@@ -288,6 +293,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &10896879 stripped
@@ -378,6 +388,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &16044735 stripped
@@ -468,6 +483,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &44444587 stripped
@@ -521,7 +541,7 @@ PrefabInstance:
     - target: {fileID: 8518888467204372240, guid: 7b7b93f60b2633046aa35d5670a69085,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8518888467204372240, guid: 7b7b93f60b2633046aa35d5670a69085,
         type: 3}
@@ -632,6 +652,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &52090012 stripped
@@ -722,6 +747,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &60462927 stripped
@@ -807,6 +837,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &80637240 stripped
@@ -897,6 +932,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &93274000 stripped
@@ -987,6 +1027,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &112895474 stripped
@@ -1083,6 +1128,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &146420476 stripped
@@ -1173,6 +1223,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &158649413 stripped
@@ -1263,6 +1318,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &162624931 stripped
@@ -1353,6 +1413,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &192892824 stripped
@@ -1443,6 +1508,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &209866087 stripped
@@ -1533,6 +1603,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &221166236 stripped
@@ -1703,6 +1778,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &224933975 stripped
@@ -1793,6 +1873,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &227440627 stripped
@@ -1883,6 +1968,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &232596659 stripped
@@ -1973,6 +2063,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &244746558 stripped
@@ -2058,6 +2153,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &249397150 stripped
@@ -2148,6 +2248,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &265814367 stripped
@@ -5498,6 +5603,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &304732954 stripped
@@ -5588,6 +5698,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &315881823 stripped
@@ -5678,6 +5793,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &321958053 stripped
@@ -5768,6 +5888,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &328174863 stripped
@@ -5858,6 +5983,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &358243500 stripped
@@ -5948,6 +6078,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &366641704 stripped
@@ -6038,6 +6173,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &374148199 stripped
@@ -6208,6 +6348,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &410057682 stripped
@@ -6298,6 +6443,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &413788516 stripped
@@ -6388,6 +6538,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &415239369 stripped
@@ -6478,6 +6633,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &422297149 stripped
@@ -6563,6 +6723,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &432591652 stripped
@@ -6653,6 +6818,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &440025919 stripped
@@ -6738,6 +6908,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &444050012 stripped
@@ -6828,6 +7003,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &447594045 stripped
@@ -6918,6 +7098,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &456524878 stripped
@@ -7003,6 +7188,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &460767374 stripped
@@ -7093,6 +7283,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &465046625 stripped
@@ -7263,6 +7458,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &477723405 stripped
@@ -7353,6 +7553,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &480845910 stripped
@@ -7443,6 +7648,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &505459802 stripped
@@ -7533,6 +7743,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &515306547 stripped
@@ -7623,6 +7838,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &555165991 stripped
@@ -7713,6 +7933,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &564659254 stripped
@@ -7803,6 +8028,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &568148133 stripped
@@ -7893,6 +8123,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &574617084 stripped
@@ -7983,6 +8218,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &591375932 stripped
@@ -8068,6 +8308,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &607475053 stripped
@@ -8158,6 +8403,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &623972390 stripped
@@ -8248,6 +8498,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &650482784 stripped
@@ -8297,7 +8552,7 @@ Transform:
   - {fileID: 681754205}
   - {fileID: 392172568}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &679883034
 PrefabInstance:
@@ -8381,6 +8636,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &679883035 stripped
@@ -8559,7 +8819,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &706861240
 PrefabInstance:
@@ -8643,6 +8903,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &706861241 stripped
@@ -8733,6 +8998,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &711609800 stripped
@@ -8818,6 +9088,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &721815758 stripped
@@ -8876,7 +9151,7 @@ PrefabInstance:
     - target: {fileID: 8924093252558708869, guid: ef8a52155b169734093696536a03d1e0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8924093252558708869, guid: ef8a52155b169734093696536a03d1e0,
         type: 3}
@@ -9044,6 +9319,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &728001403 stripped
@@ -9129,6 +9409,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &730555327 stripped
@@ -9219,6 +9504,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &734584351 stripped
@@ -9384,6 +9674,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &745724226 stripped
@@ -9474,6 +9769,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &765314759 stripped
@@ -9564,6 +9864,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &769654146 stripped
@@ -9654,6 +9959,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &801468979 stripped
@@ -9739,6 +10049,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &802923265 stripped
@@ -9909,6 +10224,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &813103908 stripped
@@ -9999,6 +10319,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &823959994 stripped
@@ -10089,6 +10414,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &835164326 stripped
@@ -10179,6 +10509,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &836342162 stripped
@@ -10264,6 +10599,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &836644571 stripped
@@ -10468,7 +10808,7 @@ Transform:
   - {fileID: 304732954}
   - {fileID: 734584351}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &851888203
 PrefabInstance:
@@ -10547,6 +10887,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &851888204 stripped
@@ -10637,6 +10982,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &862687637 stripped
@@ -10727,6 +11077,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &873531289 stripped
@@ -10817,6 +11172,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &899832484 stripped
@@ -10907,6 +11267,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &912673618 stripped
@@ -10997,6 +11362,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &927315453 stripped
@@ -11082,6 +11452,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &927479889 stripped
@@ -11252,6 +11627,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &955851443 stripped
@@ -11425,6 +11805,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &974260126 stripped
@@ -11510,6 +11895,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &978619251 stripped
@@ -11600,6 +11990,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &980725543 stripped
@@ -11651,7 +12046,7 @@ Transform:
   - {fileID: 287804231}
   - {fileID: 1358015490}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &998477436
 PrefabInstance:
@@ -11730,6 +12125,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &998477437 stripped
@@ -11820,6 +12220,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1009406262 stripped
@@ -11905,6 +12310,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1009436152 stripped
@@ -11995,6 +12405,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1038244087 stripped
@@ -12080,6 +12495,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1039870526 stripped
@@ -12170,6 +12590,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1041950172 stripped
@@ -12260,6 +12685,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1064934927 stripped
@@ -12345,6 +12775,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1069371946 stripped
@@ -12430,6 +12865,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1082991647 stripped
@@ -12520,6 +12960,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1086049732 stripped
@@ -12605,6 +13050,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1090174242 stripped
@@ -12695,6 +13145,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1091747446 stripped
@@ -12767,7 +13222,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1110111469
 PrefabInstance:
@@ -12931,6 +13386,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1115981107 stripped
@@ -13016,6 +13476,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1135844392 stripped
@@ -13106,6 +13571,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1140397358 stripped
@@ -13276,6 +13746,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1150483657 stripped
@@ -13334,7 +13809,7 @@ PrefabInstance:
     - target: {fileID: 898228177655556565, guid: b4db372db226032409a70d93dd557de1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 898228177655556565, guid: b4db372db226032409a70d93dd557de1,
         type: 3}
@@ -13440,6 +13915,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1155559638 stripped
@@ -13525,6 +14005,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1162340196 stripped
@@ -13532,6 +14017,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1108322538541302619, guid: e84919f68c430754390bf7d9f4a77d7e,
     type: 3}
   m_PrefabInstance: {fileID: 1162340195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1174094736
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171405, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168697956112171407, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: m_Name
+      value: Ambientacao
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d948913706a2e1e43970413a278f6ce8, type: 3}
+--- !u!82 &1174094737 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 217275273759529263, guid: d948913706a2e1e43970413a278f6ce8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1174094736}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1211686955
 PrefabInstance:
@@ -13615,6 +14175,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1211686956 stripped
@@ -13705,6 +14270,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1215054249 stripped
@@ -13795,6 +14365,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1241518288 stripped
@@ -13885,6 +14460,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1245942631 stripped
@@ -13975,6 +14555,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1276710385 stripped
@@ -14065,6 +14650,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1276904384 stripped
@@ -14155,6 +14745,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1282725131 stripped
@@ -14245,6 +14840,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1288564481 stripped
@@ -14335,6 +14935,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1302047488 stripped
@@ -14425,6 +15030,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1310466049 stripped
@@ -14515,6 +15125,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1346757647 stripped
@@ -14605,6 +15220,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1357760842 stripped
@@ -19319,6 +19939,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1361922890 stripped
@@ -19409,6 +20034,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1390277239 stripped
@@ -19499,6 +20129,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1400398874 stripped
@@ -19664,6 +20299,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1440677475 stripped
@@ -19754,6 +20394,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1449743601 stripped
@@ -19839,6 +20484,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1454919057 stripped
@@ -19929,6 +20579,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1459770524 stripped
@@ -20014,6 +20669,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1474078751 stripped
@@ -20104,6 +20764,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1482394582 stripped
@@ -20189,6 +20854,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1510927160 stripped
@@ -20279,6 +20949,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1514165767 stripped
@@ -20369,6 +21044,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1518976636 stripped
@@ -20459,6 +21139,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1533353359 stripped
@@ -20555,6 +21240,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1546259829 stripped
@@ -20645,6 +21335,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1546271323 stripped
@@ -20735,6 +21430,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1556169895 stripped
@@ -20825,6 +21525,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1558602997 stripped
@@ -20910,6 +21615,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1561233620 stripped
@@ -20995,6 +21705,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1563911690 stripped
@@ -21085,6 +21800,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1578341471 stripped
@@ -21093,6 +21813,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1578341470}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1582439314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582439315}
+  m_Layer: 0
+  m_Name: Inimigos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582439315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582439314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1590540151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21175,6 +21925,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1590540152 stripped
@@ -21265,6 +22020,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1597475029 stripped
@@ -21355,6 +22115,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1607734172 stripped
@@ -21445,6 +22210,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1616323735 stripped
@@ -21535,6 +22305,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1623695808 stripped
@@ -21625,6 +22400,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1650929618 stripped
@@ -21715,6 +22495,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1675650637 stripped
@@ -21805,6 +22590,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1678760934 stripped
@@ -21975,6 +22765,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1724912296 stripped
@@ -22060,6 +22855,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1749767473 stripped
@@ -22150,6 +22950,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1750572385 stripped
@@ -22240,6 +23045,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1753160961 stripped
@@ -22330,6 +23140,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1767204010 stripped
@@ -22415,6 +23230,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1828626442 stripped
@@ -22505,6 +23325,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1833989380 stripped
@@ -22595,6 +23420,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1875924938 stripped
@@ -22680,6 +23510,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1895294886 stripped
@@ -22803,6 +23638,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1910557861 stripped
@@ -22893,6 +23733,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1915303908 stripped
@@ -22978,6 +23823,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &1939059084 stripped
@@ -23068,6 +23918,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1977062558 stripped
@@ -23158,6 +24013,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &1986723051 stripped
@@ -23248,6 +24108,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2002551243 stripped
@@ -23338,6 +24203,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2004037442 stripped
@@ -23423,6 +24293,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &2006949801 stripped
@@ -23513,6 +24388,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2013712046 stripped
@@ -23603,6 +24483,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2028577031 stripped
@@ -23693,6 +24578,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2028762960 stripped
@@ -23783,6 +24673,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2040816782 stripped
@@ -23873,6 +24768,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2053336859 stripped
@@ -24043,6 +24943,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2075744642 stripped
@@ -24133,6 +25038,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2083787872 stripped
@@ -24218,6 +25128,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &2095781657 stripped
@@ -24303,6 +25218,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &2106668122 stripped
@@ -24393,6 +25313,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2110286536 stripped
@@ -24483,6 +25408,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2110830386 stripped
@@ -24573,6 +25503,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2132581357 stripped
@@ -24658,6 +25593,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 1108322538541302621, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84919f68c430754390bf7d9f4a77d7e, type: 3}
 --- !u!4 &2137639575 stripped
@@ -24748,6 +25688,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1897270029}
+    - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: caixaCaindo
+      value: 
+      objectReference: {fileID: 1174094737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79971eefd9c8c1429250bad94c17af2, type: 3}
 --- !u!4 &2137703598 stripped
@@ -24767,7 +25712,7 @@ PrefabInstance:
         type: 3}
       propertyPath: flashSound
       value: 
-      objectReference: {fileID: 3448317869321777454}
+      objectReference: {fileID: 3448317869321777455}
     - target: {fileID: 382430723022428210, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: heartbeat
@@ -24838,6 +25783,11 @@ PrefabInstance:
       propertyPath: m_AutoTiling
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1938317539663608209, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3448317869200438001, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24876,7 +25826,7 @@ PrefabInstance:
     - target: {fileID: 3448317869200438001, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3448317869200438001, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
@@ -24947,12 +25897,12 @@ PrefabInstance:
         type: 3}
       propertyPath: passo1
       value: 
-      objectReference: {fileID: 3448317869321777454}
+      objectReference: {fileID: 0}
     - target: {fileID: 3448317869200438007, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: passo2
       value: 
-      objectReference: {fileID: 3448317869321777454}
+      objectReference: {fileID: 0}
     - target: {fileID: 3448317869200438007, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: cooldown
@@ -24962,7 +25912,13 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 40ae3ab7655f4f2468369b0f7ee41340, type: 3}
 --- !u!82 &3448317869321777454 stripped
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1897270030, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+  m_CorrespondingSourceObject: {fileID: 232728146990640262, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+    type: 3}
+  m_PrefabInstance: {fileID: 3448317869321777453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3448317869321777455 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1421054863309959131, guid: 40ae3ab7655f4f2468369b0f7ee41340,
     type: 3}
   m_PrefabInstance: {fileID: 3448317869321777453}
   m_PrefabAsset: {fileID: 0}

@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7fabdad2b84e914a93e1feee825d66c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BotaoFlash: space
+  BotaoFlash: f
   ilumina: 0
   sistemaDeCargas: 0
   tempoIluminado: 5
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34063a2dc43e5ae47861d9991e392bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BotaoCaixa: escape
+  BotaoCaixa: e
   distance: 4
   boxMask:
     serializedVersion: 2
