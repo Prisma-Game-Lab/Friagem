@@ -114,9 +114,9 @@ public class Move : MonoBehaviour
     {
         Vector3Int gridPos = ground.WorldToCell(direction);
 
-        if (transform.childCount > 1)
+        if (transform.childCount > 2)
         {
-            Vector3 childDir =  transform.GetChild(1).position;
+            Vector3 childDir =  transform.GetChild(2).position;
             direction -= transform.position;
             direction += childDir;
             Vector3Int childGridPos = ground.WorldToCell(direction);
