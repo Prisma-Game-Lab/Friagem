@@ -207,6 +207,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buraco (59) Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1108322538541302617, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1108322538541302619, guid: e84919f68c430754390bf7d9f4a77d7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -352,6 +357,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buraco (73) Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257723797387800499, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
         type: 3}
@@ -3380,6 +3390,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 651809039}
     m_Modifications:
+    - target: {fileID: 2505430204482320000, guid: 7d4403fa36c88a84b8397077860aee37,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505430204482320000, guid: 7d4403fa36c88a84b8397077860aee37,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3509,6 +3529,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buraco (73) Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6257723797387800499, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
         type: 3}
       propertyPath: player
@@ -3571,6 +3596,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buraco (59) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108322538541302617, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1108322538541302619, guid: e84919f68c430754390bf7d9f4a77d7e,
         type: 3}
@@ -3754,6 +3784,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buraco (59) Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108322538541302617, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1108322538541302619, guid: e84919f68c430754390bf7d9f4a77d7e,
         type: 3}
@@ -3964,6 +3999,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buraco (73) Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6257723797387800499, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
         type: 3}
       propertyPath: player
@@ -4125,6 +4165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buraco (59) Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1108322538541302617, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1108322538541302619, guid: e84919f68c430754390bf7d9f4a77d7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4209,6 +4254,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buraco (59) Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108322538541302617, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1108322538541302619, guid: e84919f68c430754390bf7d9f4a77d7e,
         type: 3}
@@ -4546,6 +4596,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buraco (73) Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6257723797387800499, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
         type: 3}
       propertyPath: player
@@ -4631,6 +4686,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buraco (73) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6257723797387800499, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
         type: 3}
       propertyPath: player
@@ -4715,6 +4775,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buraco (73) Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257723797387800499, guid: a79971eefd9c8c1429250bad94c17af2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6257723797387800503, guid: a79971eefd9c8c1429250bad94c17af2,
         type: 3}
@@ -9810,6 +9875,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buraco (59) Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1108322538541302617, guid: e84919f68c430754390bf7d9f4a77d7e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1108322538541302619, guid: e84919f68c430754390bf7d9f4a77d7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10202,6 +10272,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 651809039}
     m_Modifications:
+    - target: {fileID: 2505430204482320000, guid: 7d4403fa36c88a84b8397077860aee37,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505430204482320000, guid: 7d4403fa36c88a84b8397077860aee37,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10495,6 +10575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: cooldown
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448317869200438007, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+        type: 3}
+      propertyPath: pitMask.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 4667615296107849637, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}

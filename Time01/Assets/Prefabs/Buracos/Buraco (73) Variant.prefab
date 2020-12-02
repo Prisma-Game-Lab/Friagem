@@ -128,5 +128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buraco (73) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 578698102078779295, guid: 20254e8ea098fbc4c9d40887dc61a4ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20254e8ea098fbc4c9d40887dc61a4ab, type: 3}

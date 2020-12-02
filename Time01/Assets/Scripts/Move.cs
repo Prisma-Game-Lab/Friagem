@@ -15,16 +15,18 @@ public class Move : MonoBehaviour
     private Vector3 MoveHor;
     private Vector3 MoveVer;
     private Vector3 TargetPos;
+    private int lastPasso = -1;
     private bool Moving = false;
     private Playerpush playerPush;
+    private Animator anim;
 
     public float Speed;
     public float GridSize;
     public float cooldown;
     public List<AudioSource> passos;
-    private int lastPasso = -1;
     public AudioSource colisaoSound;
-    private Animator anim;
+    public LayerMask pitMask;
+    
 
 
     // Start is called before the first frame update
@@ -45,8 +47,10 @@ public class Move : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
 
-        RaycastHit2D hitH = Physics2D.Raycast(transform.position, h * MoveHor, playerPush.distance, playerPush.boxMask);
-        RaycastHit2D hitV = Physics2D.Raycast(transform.position, v * MoveVer, playerPush.distance, playerPush.boxMask);
+        RaycastHit2D hitHc = Physics2D.Raycast(transform.position, h * MoveHor, playerPush.distance, playerPush.boxMask);
+        RaycastHit2D hitVc = Physics2D.Raycast(transform.position, v * MoveVer, playerPush.distance, playerPush.boxMask);
+        RaycastHit2D hitHb = Physics2D.Raycast(transform.position, h * MoveHor, playerPush.distance, pitMask);
+        RaycastHit2D hitVb = Physics2D.Raycast(transform.position, v * MoveVer, playerPush.distance, pitMask);
 
 
         if (!Moving)
@@ -55,7 +59,7 @@ public class Move : MonoBehaviour
             {
                 anim.SetFloat("Horizontal", h);
                 anim.SetFloat("Vertical", 0f);
-                if (hitH.collider != null && (hitH.collider.gameObject.tag == "Box" || hitH.collider.gameObject.tag == "Wall"))
+                if ((hitHc.collider != null && hitHc.collider.gameObject.tag == "Box") || (hitHb.collider != null && hitHb.collider.gameObject.tag == "Wall"))
                 {
                     TargetPos = transform.position;
                 }
@@ -81,7 +85,7 @@ public class Move : MonoBehaviour
             {
                 anim.SetFloat("Vertical", v);
                 anim.SetFloat("Horizontal", 0f);
-                if (hitV.collider != null && (hitV.collider.gameObject.tag == "Box" || hitV.collider.gameObject.tag == "Wall"))
+                if ((hitVc.collider != null && hitVc.collider.gameObject.tag == "Box") || (hitVb.collider != null && hitVb.collider.gameObject.tag == "Wall"))
                 {
                     TargetPos = transform.position;
                 }
