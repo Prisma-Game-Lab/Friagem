@@ -3133,7 +3133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651809038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.035889, y: -14.884934, z: -131.60938}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 820231625}
@@ -10156,25 +10156,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 651809039}
     m_Modifications:
-    - target: {fileID: 2505430204482320000, guid: 7d4403fa36c88a84b8397077860aee37,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 2.12
-      objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.964111
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.615066
+      value: -25.5
       objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 131.60938
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
@@ -10221,16 +10216,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caixa (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 2505430204482320013, guid: 7d4403fa36c88a84b8397077860aee37,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2505430204482320013, guid: 7d4403fa36c88a84b8397077860aee37,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6ab1725f5faedb548a4515d16c65a6b2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d4403fa36c88a84b8397077860aee37, type: 3}
 --- !u!4 &1558425452 stripped
@@ -10246,25 +10231,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 651809039}
     m_Modifications:
-    - target: {fileID: 2505430204482320000, guid: 7d4403fa36c88a84b8397077860aee37,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 2.12
-      objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.03589
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.384935
+      value: 14.500001
       objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 131.60938
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
@@ -10311,16 +10291,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caixa
       objectReference: {fileID: 0}
-    - target: {fileID: 2505430204482320013, guid: 7d4403fa36c88a84b8397077860aee37,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2505430204482320013, guid: 7d4403fa36c88a84b8397077860aee37,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6ab1725f5faedb548a4515d16c65a6b2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d4403fa36c88a84b8397077860aee37, type: 3}
 --- !u!1001 &1697840294
@@ -10420,25 +10390,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 651809039}
     m_Modifications:
-    - target: {fileID: 2505430204482320000, guid: 7d4403fa36c88a84b8397077860aee37,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 2.12
-      objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -45.03589
+      value: -26
       objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.384935
+      value: 14.500001
       objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 131.60938
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
         type: 3}
@@ -10485,16 +10450,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caixa (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 2505430204482320013, guid: 7d4403fa36c88a84b8397077860aee37,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2505430204482320013, guid: 7d4403fa36c88a84b8397077860aee37,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6ab1725f5faedb548a4515d16c65a6b2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d4403fa36c88a84b8397077860aee37, type: 3}
 --- !u!4 &1760517341 stripped

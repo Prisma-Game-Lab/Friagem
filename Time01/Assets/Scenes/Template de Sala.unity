@@ -121,72 +121,72 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &8904005212384414000
+--- !u!1001 &6183089957067415892
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8904005211912468320, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
-        type: 3}
-      propertyPath: m_Name
-      value: Template de Sala
-      objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.1270876
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -30.302256
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.838905
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8904005211912468321, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+    - target: {fileID: 6183089956001362728, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6183089956001362735, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+        type: 3}
+      propertyPath: m_Name
+      value: Template de Sala
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eb8254b414739a4eaf4b1ac583f7e72, type: 3}
