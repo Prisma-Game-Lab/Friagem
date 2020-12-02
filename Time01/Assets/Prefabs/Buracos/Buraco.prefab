@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 578698102078779292}
   - component: {fileID: 578698102078779290}
   - component: {fileID: 578698102078779291}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Buraco
   m_TagString: Wall
   m_Icon: {fileID: 0}
