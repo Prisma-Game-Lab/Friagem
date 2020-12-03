@@ -415,6 +415,9 @@ MonoBehaviour:
   - {fileID: 8869162073710717416}
   - {fileID: 4667615296107849637}
   colisaoSound: {fileID: 2946759713718952417}
+  pitMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &382430723022428210
 MonoBehaviour:
   m_ObjectHideFlags: 0
