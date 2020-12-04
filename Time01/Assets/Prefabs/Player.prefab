@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34063a2dc43e5ae47861d9991e392bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BotaoCaixa: e
+  BotaoCaixa: space
   distance: 4
   boxMask:
     serializedVersion: 2

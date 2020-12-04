@@ -10970,6 +10970,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8924093253382486865, guid: ef8a52155b169734093696536a03d1e0,
+        type: 3}
+      propertyPath: m_text
+      value: "Espa\xE7o: Segura Caixa         F:  Usar Flare         R: Reiniciar"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef8a52155b169734093696536a03d1e0, type: 3}
 --- !u!1001 &1814933107

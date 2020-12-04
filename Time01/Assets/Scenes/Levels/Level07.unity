@@ -10175,6 +10175,11 @@ PrefabInstance:
       propertyPath: Lanterna
       value: 
       objectReference: {fileID: 117048355}
+    - target: {fileID: 382430723022428210, guid: 40ae3ab7655f4f2468369b0f7ee41340,
+        type: 3}
+      propertyPath: sistemaDeCargas
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1140673002684209710, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
