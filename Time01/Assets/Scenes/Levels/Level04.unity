@@ -3536,6 +3536,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8924093252558708873, guid: ef8a52155b169734093696536a03d1e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef8a52155b169734093696536a03d1e0, type: 3}
 --- !u!4 &820231625 stripped
@@ -11088,6 +11093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Point Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 6810473428982263702, guid: 4489c4e4fcbb92949b8a16c61d5f8438,
+        type: 3}
+      propertyPath: m_Range
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6810473428982263703, guid: 4489c4e4fcbb92949b8a16c61d5f8438,
         type: 3}

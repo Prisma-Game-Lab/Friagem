@@ -10231,6 +10231,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8924093252558708873, guid: ef8a52155b169734093696536a03d1e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8924093252691989866, guid: ef8a52155b169734093696536a03d1e0,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -10929,9 +10934,17 @@ CompositeCollider2D:
       - X: 520000000
         Y: 200000000
       - X: 520000000
-        Y: -40000000
+        Y: 40000100
+      - X: 519999959
+        Y: 40000100
+      - X: 519999900
+        Y: 40000041
+      - X: 519999900
+        Y: -40000041
+      - X: 519999959
+        Y: -40000100
       - X: 560000000
-        Y: -40000000
+        Y: -40000100
       - X: 560000000
         Y: -80000000
       - X: 520000000
@@ -10954,8 +10967,8 @@ CompositeCollider2D:
       - {x: -48, y: 4.0000296}
       - {x: -47.999973, y: 20}
       - {x: 52, y: 19.999971}
-      - {x: 52.00003, y: -4}
-      - {x: 56, y: -4.0000296}
+      - {x: 52.000027, y: -4.00001}
+      - {x: 56, y: -4.000039}
       - {x: 55.99997, y: -8}
       - {x: 52, y: -8.00003}
   m_VertexDistance: 0.0005
@@ -13441,8 +13454,8 @@ Tilemap:
   - first: {x: 13, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -13585,8 +13598,8 @@ Tilemap:
   - first: {x: 13, y: 0, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 8
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -15340,13 +15353,13 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 075f0fba01eae704ba33d3aa8cb692be, type: 2}
   - m_RefCount: 333
     m_Data: {fileID: 11400000, guid: 8ee86d6ff17288d48af1d2e8182e417d, type: 2}
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 494d489fb1d5ba54fbf8195ca5a54454, type: 2}
   - m_RefCount: 28
     m_Data: {fileID: 11400000, guid: f12a62fa7e22d5948b757852918d2f97, type: 2}
-  - m_RefCount: 53
+  - m_RefCount: 51
     m_Data: {fileID: 11400000, guid: 44ba9aaaaf291b0498bda5a2cf906a00, type: 2}
-  - m_RefCount: 15
+  - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: eaa68e80a2fb74546a198cf5a086a61b, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 8ec6f49b55099f64f801951b06952c48, type: 2}
@@ -15363,16 +15376,16 @@ Tilemap:
   - m_RefCount: 333
     m_Data: {fileID: -2465269325807948260, guid: 73cedcfccc3b90647bbb53ebec5b657e,
       type: 3}
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data: {fileID: 1621065355069515047, guid: 73cedcfccc3b90647bbb53ebec5b657e,
       type: 3}
   - m_RefCount: 28
     m_Data: {fileID: -5489746355690426704, guid: 73cedcfccc3b90647bbb53ebec5b657e,
       type: 3}
-  - m_RefCount: 53
+  - m_RefCount: 51
     m_Data: {fileID: -1578318779004480879, guid: 73cedcfccc3b90647bbb53ebec5b657e,
       type: 3}
-  - m_RefCount: 15
+  - m_RefCount: 16
     m_Data: {fileID: 2291559270239342667, guid: 73cedcfccc3b90647bbb53ebec5b657e,
       type: 3}
   - m_RefCount: 16
@@ -17381,6 +17394,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Point Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 6810473428982263702, guid: 4489c4e4fcbb92949b8a16c61d5f8438,
+        type: 3}
+      propertyPath: m_Range
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6810473428982263703, guid: 4489c4e4fcbb92949b8a16c61d5f8438,
         type: 3}
