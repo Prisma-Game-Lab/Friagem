@@ -145,6 +145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GridSize: 1
-  Speed: 5
+  Speed: 0.8
   player: {fileID: 0}
   ground: {fileID: 0}
