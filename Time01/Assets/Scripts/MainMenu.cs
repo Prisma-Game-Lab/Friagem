@@ -13,7 +13,12 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        
+        PlayerPrefs.SetInt("levelReached", SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void Continue()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("levelReached"), LoadSceneMode.Single);
     }
 
     public void QuitGame()
