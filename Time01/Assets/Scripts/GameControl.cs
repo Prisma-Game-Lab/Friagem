@@ -8,10 +8,12 @@ public class GameControl : MonoBehaviour
     public string BotaoRestart;
     public string NextLevel;
 
+    public int NextLevelIndex;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        NextLevelIndex = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     // Update is called once per frame
@@ -28,7 +30,17 @@ public class GameControl : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            if(NextLevelIndex == 12)
+            {
+                Debug.Log("Fim do jogo");
+            }
+
             SceneManager.LoadScene(NextLevel, LoadSceneMode.Single);
+
+            if (NextLevelIndex > PlayerPrefs.GetInt("levelReached"))
+            {
+                PlayerPrefs.SetInt("levelReached", NextLevelIndex);
+            }
         }
     }
 
