@@ -34,8 +34,12 @@ public class Pathfinding2D
         int bestXDistance = Mathf.Abs(gridFinish.x - startNode.pos.x);
         int bestYDistance = Mathf.Abs(gridFinish.y - startNode.pos.y);
 
+        
+        bool useX = UnityEngine.Random.Range(0,2) == 0;
+
         while(queue.Count()>0)
         {
+            useX = !useX;
             GridNode currentNode = queue.Dequeue();
             if(currentNode.pos == gridFinish)
             {
@@ -56,7 +60,14 @@ public class Pathfinding2D
                 {
                     n.gScore=novoGScore;
                     n.cameFrom=currentNode;
-                    n.fScore = novoGScore + Mathf.Abs(gridFinish.x - n.pos.x);
+                    if(useX)
+                    {
+                        n.fScore = novoGScore + Mathf.Abs(gridFinish.x - n.pos.x);
+                    }
+                    else
+                    {
+                        n.fScore = novoGScore + Mathf.Abs(gridFinish.y - n.pos.y);
+                    }
 
                     if(!queue.Contains(n))
                     {
