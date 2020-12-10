@@ -363,11 +363,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flare
       objectReference: {fileID: 0}
-    - target: {fileID: 8518888467204372242, guid: 7b7b93f60b2633046aa35d5670a69085,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b7b93f60b2633046aa35d5670a69085, type: 3}
 --- !u!1001 &113017589
