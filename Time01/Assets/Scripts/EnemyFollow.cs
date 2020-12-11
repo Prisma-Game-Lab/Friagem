@@ -14,6 +14,7 @@ public class EnemyFollow : MonoBehaviour
 
 
     private bool Moving = false;
+    private bool CanMove = false;
     private Flash flash;
 
 
@@ -21,15 +22,22 @@ public class EnemyFollow : MonoBehaviour
     void Start()
     {
         flash = player.GetComponent<Flash>();
+        StartCoroutine(EnableMove());
     }
 
     // Update is called once per frame
     void Update()
     {        
-        if (!Moving)
+        if (!Moving && CanMove)
         {
             StartCoroutine(MoveCooldown(player.transform.position));
         }
+    }
+
+    private IEnumerator EnableMove()
+    {
+        yield return new WaitForSeconds(6.0f);
+        CanMove = true;
     }
 
     private IEnumerator MoveCooldown(Vector3 target)

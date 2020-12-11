@@ -16,6 +16,7 @@ public class Move : MonoBehaviour
     private Vector3 MoveVer;
     private Vector3 TargetPos;
     private int lastPasso = -1;
+    private bool startLevel = false;
     private bool Moving = false;
     private Playerpush playerPush;
     private Animator anim;
@@ -38,72 +39,77 @@ public class Move : MonoBehaviour
 
         playerPush = GetComponent<Playerpush>();
         anim = GetComponent<Animator>();
+
+        StartCoroutine(EnableMove());
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        //Variáveis para guardar a direção do movimento. -A
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
-
-        RaycastHit2D hitHc = Physics2D.Raycast(transform.position, h * MoveHor, playerPush.distance, playerPush.boxMask);
-        RaycastHit2D hitVc = Physics2D.Raycast(transform.position, v * MoveVer, playerPush.distance, playerPush.boxMask);
-        RaycastHit2D hitHb = Physics2D.Raycast(transform.position, h * MoveHor, playerPush.distance, pitMask);
-        RaycastHit2D hitVb = Physics2D.Raycast(transform.position, v * MoveVer, playerPush.distance, pitMask);
-
-
-        if (!Moving)
+        if(startLevel)
         {
-            if (h != 0 && !(playerPush.SegurandoCaixavertical))
-            {
-                anim.SetFloat("Horizontal", h);
-                anim.SetFloat("Vertical", 0f);
-                if ((hitHc.collider != null && hitHc.collider.gameObject.tag == "Box") || (hitHb.collider != null && hitHb.collider.gameObject.tag == "Wall"))
-                {
-                    TargetPos = transform.position;
-                }
-                else
-                {
-                    TargetPos = transform.position + h * MoveHor;
-                }
+            //Variáveis para guardar a direção do movimento. -A
+            float h = Input.GetAxisRaw("Horizontal");
+            float v = Input.GetAxisRaw("Vertical");
 
-                if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
+            RaycastHit2D hitHc = Physics2D.Raycast(transform.position, h * MoveHor, playerPush.distance, playerPush.boxMask);
+            RaycastHit2D hitVc = Physics2D.Raycast(transform.position, v * MoveVer, playerPush.distance, playerPush.boxMask);
+            RaycastHit2D hitHb = Physics2D.Raycast(transform.position, h * MoveHor, playerPush.distance, pitMask);
+            RaycastHit2D hitVb = Physics2D.Raycast(transform.position, v * MoveVer, playerPush.distance, pitMask);
+
+
+            if (!Moving)
+            {
+                if (h != 0 && !(playerPush.SegurandoCaixavertical))
                 {
-                    PlayStepSound();
-                    StartCoroutine(MoveCooldown());
-                }
-                else
-                {
-                    if(!colisaoSound.isPlaying)
+                    anim.SetFloat("Horizontal", h);
+                    anim.SetFloat("Vertical", 0f);
+                    if ((hitHc.collider != null && hitHc.collider.gameObject.tag == "Box") || (hitHb.collider != null && hitHb.collider.gameObject.tag == "Wall"))
                     {
-                        colisaoSound.Play();
+                        TargetPos = transform.position;
+                    }
+                    else
+                    {
+                        TargetPos = transform.position + h * MoveHor;
+                    }
+
+                    if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
+                    {
+                        PlayStepSound();
+                        StartCoroutine(MoveCooldown());
+                    }
+                    else
+                    {
+                        if (!colisaoSound.isPlaying)
+                        {
+                            colisaoSound.Play();
+                        }
                     }
                 }
-            }
-            else if (v != 0 && !(playerPush.SegurandoCaixahorizontal))
-            {
-                anim.SetFloat("Vertical", v);
-                anim.SetFloat("Horizontal", 0f);
-                if ((hitVc.collider != null && hitVc.collider.gameObject.tag == "Box") || (hitVb.collider != null && hitVb.collider.gameObject.tag == "Wall"))
+                else if (v != 0 && !(playerPush.SegurandoCaixahorizontal))
                 {
-                    TargetPos = transform.position;
-                }
-                else
-                {
-                    TargetPos = transform.position + v * MoveVer;
-                }
-
-                if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
-                {
-                    PlayStepSound();
-                    StartCoroutine(MoveCooldown());
-                }
-                else
-                {
-                    if(!colisaoSound.isPlaying)
+                    anim.SetFloat("Vertical", v);
+                    anim.SetFloat("Horizontal", 0f);
+                    if ((hitVc.collider != null && hitVc.collider.gameObject.tag == "Box") || (hitVb.collider != null && hitVb.collider.gameObject.tag == "Wall"))
                     {
-                        colisaoSound.Play();
+                        TargetPos = transform.position;
+                    }
+                    else
+                    {
+                        TargetPos = transform.position + v * MoveVer;
+                    }
+
+                    if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
+                    {
+                        PlayStepSound();
+                        StartCoroutine(MoveCooldown());
+                    }
+                    else
+                    {
+                        if (!colisaoSound.isPlaying)
+                        {
+                            colisaoSound.Play();
+                        }
                     }
                 }
             }
@@ -159,5 +165,11 @@ public class Move : MonoBehaviour
         }
         lastPasso = qualPasso;
         passos[qualPasso].Play();
+    }
+
+    private IEnumerator EnableMove()
+    {
+        yield return new WaitForSeconds(6.0f);
+        startLevel = true;
     }
 }
