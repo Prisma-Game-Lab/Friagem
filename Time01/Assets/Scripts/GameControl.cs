@@ -37,7 +37,7 @@ public class GameControl : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            if(NextLevelIndex == 13)
+            if(NextLevelIndex == 19)
             {
                 Debug.Log("Fim do jogo");
             }
@@ -45,7 +45,7 @@ public class GameControl : MonoBehaviour
             //SceneManager.LoadScene(NextLevel, LoadSceneMode.Single);
             StartCoroutine(LoadLevel(NextLevel));
 
-            if (NextLevelIndex > PlayerPrefs.GetInt("levelReached") && NextLevelIndex != 13)
+            if (NextLevelIndex > PlayerPrefs.GetInt("levelReached") && NextLevelIndex != 19)
             {
                 PlayerPrefs.SetInt("levelReached", NextLevelIndex);
             }

@@ -4,6 +4,7 @@ using UnityEditor.Experimental;
 using UnityEngine;
 using UnityEngine.Jobs;
 using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
 
 public class Move : MonoBehaviour
 {
@@ -40,7 +41,14 @@ public class Move : MonoBehaviour
         playerPush = GetComponent<Playerpush>();
         anim = GetComponent<Animator>();
 
-        StartCoroutine(EnableMove());
+        if(SceneManager.GetActiveScene().buildIndex < 3)
+        {
+            startLevel = true;
+        }
+        else
+        {
+            StartCoroutine(EnableMove());
+        }
     }
 
     // Update is called once per frame
@@ -75,6 +83,11 @@ public class Move : MonoBehaviour
 
                     if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                     {
+                        if(transform.childCount > 2)
+                        {
+                            //Som da caixa sendo empurrada
+                        }
+
                         PlayStepSound();
                         StartCoroutine(MoveCooldown());
                     }
@@ -101,6 +114,11 @@ public class Move : MonoBehaviour
 
                     if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                     {
+                        if (transform.childCount > 2)
+                        {
+                            //Som da caixa sendo empurrada
+                        }
+
                         PlayStepSound();
                         StartCoroutine(MoveCooldown());
                     }
