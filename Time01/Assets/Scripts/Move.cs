@@ -75,6 +75,11 @@ public class Move : MonoBehaviour
 
                     if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                     {
+                        if(transform.childCount > 2)
+                        {
+                            //Som da caixa sendo empurrada
+                        }
+
                         PlayStepSound();
                         StartCoroutine(MoveCooldown());
                     }
@@ -101,6 +106,11 @@ public class Move : MonoBehaviour
 
                     if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
                     {
+                        if (transform.childCount > 2)
+                        {
+                            //Som da caixa sendo empurrada
+                        }
+
                         PlayStepSound();
                         StartCoroutine(MoveCooldown());
                     }
