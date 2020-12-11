@@ -4,6 +4,7 @@ using UnityEditor.Experimental;
 using UnityEngine;
 using UnityEngine.Jobs;
 using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
 
 public class Move : MonoBehaviour
 {
@@ -40,7 +41,14 @@ public class Move : MonoBehaviour
         playerPush = GetComponent<Playerpush>();
         anim = GetComponent<Animator>();
 
-        StartCoroutine(EnableMove());
+        if(SceneManager.GetActiveScene().buildIndex < 3)
+        {
+            startLevel = true;
+        }
+        else
+        {
+            StartCoroutine(EnableMove());
+        }
     }
 
     // Update is called once per frame
