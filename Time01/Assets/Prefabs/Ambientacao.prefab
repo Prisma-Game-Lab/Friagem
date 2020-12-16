@@ -354,4 +354,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b130467651754d343929342e47da16bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crossFadeTime: 3
   music: {fileID: 8300000, guid: 1df07ec358046324aae14a6b1567a929, type: 3}

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MusicCrossfade : MonoBehaviour
   {
-    public AudioClip music;
+    [SerializeField] private float crossFadeTime;
+    [SerializeField] private AudioClip music;
     private AudioSource[] aud = new AudioSource[2];
     private bool activeAudioSourceIndex;
     private AudioSource activeAudioSource;
@@ -24,7 +25,7 @@ public class MusicCrossfade : MonoBehaviour
  
     void Update() {
         
-        if(music.length - activeAudioSource.time <= 2.0f)
+        if(music.length - activeAudioSource.time <= crossFadeTime)
         {
             newSoundtrack(music);
         }
@@ -38,7 +39,7 @@ public class MusicCrossfade : MonoBehaviour
         nextAudioSource.clip = clip;
         nextAudioSource.Play();
  
-        musicTransition = transition(20); //20 is the equivalent to 2 seconds (More than 3 seconds begins to overlap for a bit too long)
+        musicTransition = transition(crossFadeTime * 100); 
         StartCoroutine(musicTransition);
     }
  
@@ -51,7 +52,7 @@ public class MusicCrossfade : MonoBehaviour
             nextAudioSource.volume = 1-vol;
  
  
-            yield return new WaitForSecondsRealtime(0.1f);
+            yield return new WaitForSecondsRealtime(0.01f);
             //use realtime otherwise if you pause the game you could pause the transition half way
         }
  

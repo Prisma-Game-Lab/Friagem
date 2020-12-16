@@ -3942,16 +3942,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ambientacao
       objectReference: {fileID: 0}
-    - target: {fileID: 5480055160857764482, guid: d948913706a2e1e43970413a278f6ce8,
-        type: 3}
-      propertyPath: intervalMin
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5480055160857764482, guid: d948913706a2e1e43970413a278f6ce8,
-        type: 3}
-      propertyPath: intervalMax
-      value: 15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d948913706a2e1e43970413a278f6ce8, type: 3}
 --- !u!1001 &828616566
