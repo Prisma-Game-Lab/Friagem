@@ -87,7 +87,7 @@ public class Move : MonoBehaviour
                         TargetPos = transform.position + h * MoveHor;
                     }
 
-                    if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
+                    if (CanMove(TargetPos, h, v)) //Quando implementar a arte no tilemap usar CanMove()
                     {
                         if(transform.childCount > 2)
                         {
@@ -118,7 +118,7 @@ public class Move : MonoBehaviour
                         TargetPos = transform.position + v * MoveVer;
                     }
 
-                    if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
+                    if (CanMove(TargetPos, h, v)) //Quando implementar a arte no tilemap usar CanMove()
                     {
                         if (transform.childCount > 2)
                         {
@@ -140,7 +140,7 @@ public class Move : MonoBehaviour
         }
     }
 
-    private bool CanMove(Vector3 direction)
+    private bool CanMove(Vector3 direction, float h, float v)
     {
         Vector3Int gridPos = ground.WorldToCell(direction);
 
@@ -150,7 +150,14 @@ public class Move : MonoBehaviour
             direction -= transform.position;
             direction += childDir;
             Vector3Int childGridPos = ground.WorldToCell(direction);
+            RaycastHit2D childHitHc = Physics2D.Raycast(direction, h * MoveHor, 2f, playerPush.boxMask);
+            RaycastHit2D childHitVc = Physics2D.Raycast(direction, v * MoveVer, 2f, playerPush.boxMask);
+
             if ((obstaculos.HasTile(childGridPos) || obstaculos.HasTile(gridPos)) || (!ground.HasTile(childGridPos) || !ground.HasTile(gridPos)))
+            {
+                return false;
+            }
+            else if ((childHitVc.collider != null && childHitVc.collider.gameObject.tag == "Box") || (childHitHc.collider != null && childHitHc.collider.gameObject.tag == "Box"))//impede uma caixa e colidir com a outra
             {
                 return false;
             }
