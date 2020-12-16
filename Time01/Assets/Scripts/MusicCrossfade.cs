@@ -18,6 +18,8 @@ public class MusicCrossfade : MonoBehaviour
         aud[1].loop = false;
         activeAudioSource = aud[activeAudioSourceIndex ? 0:1];
         nextAudioSource = aud[activeAudioSourceIndex ? 1:0];
+        activeAudioSource.clip = music;
+        activeAudioSource.Play();
     }
  
     void Update() {

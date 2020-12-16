@@ -3942,6 +3942,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ambientacao
       objectReference: {fileID: 0}
+    - target: {fileID: 5480055160857764482, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: intervalMin
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480055160857764482, guid: d948913706a2e1e43970413a278f6ce8,
+        type: 3}
+      propertyPath: intervalMax
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d948913706a2e1e43970413a278f6ce8, type: 3}
 --- !u!1001 &828616566
@@ -4836,18 +4846,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1309990681}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1318112447 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8924093253160011793, guid: ef8a52155b169734093696536a03d1e0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1706873772}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1358015489
 GameObject:
   m_ObjectHideFlags: 0
@@ -10462,7 +10460,7 @@ PrefabInstance:
         type: 3}
       propertyPath: flareText
       value: 
-      objectReference: {fileID: 1318112447}
+      objectReference: {fileID: 0}
     - target: {fileID: 382430723022428210, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: totalFlares
