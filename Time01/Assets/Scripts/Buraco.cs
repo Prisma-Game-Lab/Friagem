@@ -6,8 +6,6 @@ public class Buraco : MonoBehaviour
 {
     public GameObject player;
 
-    public AudioSource caixaCaindo;
-
     private Playerpush playerPush;
 
     private void Start()
@@ -19,7 +17,7 @@ public class Buraco : MonoBehaviour
     {
         if(collision.collider.CompareTag("Untagged"))
         {
-            caixaCaindo.Play();
+            SoundManager.instance.boxFalling.Play();
             Destroy(gameObject);
             Destroy(collision.gameObject);
             playerPush.SegurandoCaixahorizontal = false;
