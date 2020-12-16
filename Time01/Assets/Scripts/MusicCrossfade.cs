@@ -15,8 +15,13 @@ public class MusicCrossfade : MonoBehaviour
     void Awake () {
         aud[0] = gameObject.AddComponent<AudioSource>();
         aud[1] = gameObject.AddComponent<AudioSource>();
+        
         aud[0].loop = false;
         aud[1].loop = false;
+
+        aud[0].playOnAwake = false;
+        aud[1].playOnAwake = false;
+        
         activeAudioSource = aud[activeAudioSourceIndex ? 0:1];
         nextAudioSource = aud[activeAudioSourceIndex ? 1:0];
         activeAudioSource.clip = music;
@@ -39,14 +44,14 @@ public class MusicCrossfade : MonoBehaviour
         nextAudioSource.clip = clip;
         nextAudioSource.Play();
  
-        musicTransition = transition(crossFadeTime * 100); 
+        musicTransition = transition(crossFadeTime); 
         StartCoroutine(musicTransition);
     }
  
         //  'transitionDuration' is how many tenths of a second it will take, eg, 10 would be equal to 1 second
-    IEnumerator transition(int transitionDuration) {
+    IEnumerator transition(float transitionDuration) {
  
-        for (int i = 0; i < transitionDuration+1; i++) {
+        for (float i = 0.0f; i <= transitionDuration; i+=0.01f) {
             var vol = (transitionDuration - i) * (1f / transitionDuration);
             activeAudioSource.volume = vol;
             nextAudioSource.volume = 1-vol;
@@ -58,6 +63,8 @@ public class MusicCrossfade : MonoBehaviour
  
         //finish by stopping the audio clip on the now silent audio source
         activeAudioSource.Stop();
+        activeAudioSource.volume = 0.0f;
+        nextAudioSource.volume = 1.0f;
  
         activeAudioSourceIndex = !activeAudioSourceIndex;
         activeAudioSource = aud[activeAudioSourceIndex ? 0:1];
