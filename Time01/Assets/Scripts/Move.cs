@@ -28,6 +28,8 @@ public class Move : MonoBehaviour
     public List<AudioSource> passos;
     public AudioSource colisaoSound;
     public LayerMask pitMask;
+    [HideInInspector]
+    public int d;
     
 
 
@@ -65,6 +67,10 @@ public class Move : MonoBehaviour
             RaycastHit2D hitHb = Physics2D.Raycast(transform.position, h * MoveHor, playerPush.distance, pitMask);
             RaycastHit2D hitVb = Physics2D.Raycast(transform.position, v * MoveVer, playerPush.distance, pitMask);
 
+            if(h!=0 || v != 0)
+            {
+                d = verificaDirecao(h, v);
+            }
 
             if (!Moving)
             {
@@ -81,7 +87,7 @@ public class Move : MonoBehaviour
                         TargetPos = transform.position + h * MoveHor;
                     }
 
-                    if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
+                    if (CanMove(TargetPos, h, v)) //Quando implementar a arte no tilemap usar CanMove()
                     {
                         if(transform.childCount > 2)
                         {
@@ -112,7 +118,7 @@ public class Move : MonoBehaviour
                         TargetPos = transform.position + v * MoveVer;
                     }
 
-                    if (CanMove(TargetPos)) //Quando implementar a arte no tilemap usar CanMove()
+                    if (CanMove(TargetPos, h, v)) //Quando implementar a arte no tilemap usar CanMove()
                     {
                         if (transform.childCount > 2)
                         {
@@ -134,7 +140,7 @@ public class Move : MonoBehaviour
         }
     }
 
-    private bool CanMove(Vector3 direction)
+    private bool CanMove(Vector3 direction, float h, float v)
     {
         Vector3Int gridPos = ground.WorldToCell(direction);
 
@@ -144,7 +150,14 @@ public class Move : MonoBehaviour
             direction -= transform.position;
             direction += childDir;
             Vector3Int childGridPos = ground.WorldToCell(direction);
+            RaycastHit2D childHitHc = Physics2D.Raycast(direction, h * MoveHor, 2f, playerPush.boxMask);
+            RaycastHit2D childHitVc = Physics2D.Raycast(direction, v * MoveVer, 2f, playerPush.boxMask);
+
             if ((obstaculos.HasTile(childGridPos) || obstaculos.HasTile(gridPos)) || (!ground.HasTile(childGridPos) || !ground.HasTile(gridPos)))
+            {
+                return false;
+            }
+            else if ((childHitVc.collider != null && childHitVc.collider.gameObject.tag == "Box") || (childHitHc.collider != null && childHitHc.collider.gameObject.tag == "Box"))//impede uma caixa e colidir com a outra
             {
                 return false;
             }
@@ -189,5 +202,30 @@ public class Move : MonoBehaviour
     {
         yield return new WaitForSeconds(6.0f);
         startLevel = true;
+    }
+
+    //ve a direção para a qual o player está olhando e retorna um inteiro correspondente a direção da caixa
+    int verificaDirecao(float h, float v)
+    {
+        if (h > 0)
+        {
+            return 0;
+        }
+        else if (h < 0)
+        {
+            return 1;
+        }
+        else if (v > 0)
+        {
+            return 2;
+        }
+        else if (v < 0)
+        {
+            return 3;
+        }
+        else
+        {
+            return -1;
+        }
     }
 }

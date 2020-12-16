@@ -17,15 +17,27 @@ public class Playerpush : MonoBehaviour
 
     private GameObject box;
     public GameObject Player;
+
+    private Move move;
+    private int i;
+    private int d;
     // Start is called before the first frame update
     void Start()
     {
-
+        move = GetComponent<Move>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        if(SegurandoCaixahorizontal== false && SegurandoCaixavertical == false)
+        {
+            d = move.d;
+            Debug.Log(d);
+        }
+
+
         RaycastHit2D hitRight = Physics2D.Raycast(transform.position, Vector2.right, distance, boxMask);
         RaycastHit2D hitLeft = Physics2D.Raycast(transform.position, Vector2.left, distance, boxMask);
         RaycastHit2D hitUp = Physics2D.Raycast(transform.position, Vector2.up, distance, boxMask);
@@ -33,27 +45,41 @@ public class Playerpush : MonoBehaviour
 
         RaycastHit2D[] hits = { hitRight, hitLeft, hitUp, hitDown };
 
-        for (int i = 0; i < 4; i++)
+        for (i = 0; i < 4; i++)
         {
-            if (hits[i].collider != null && hits[i].collider.gameObject.tag == "Box" && Input.GetKeyDown(BotaoCaixa))
+            if (hits[i].collider != null && hits[i].collider.gameObject.tag == "Box" && Input.GetKeyDown(BotaoCaixa) && i==d)
             {
                 box = hits[i].collider.gameObject;
                 Debug.Log(hits[i].collider.name);
+                Debug.Log(i);
                 box.transform.SetParent(Player.transform);
                 box.tag = "Untagged";
-                if (hits[i] == hitRight || hits[i] == hitLeft)
+                /*if (hits[i] == hitRight || hits[i] == hitLeft)// comparar usando a lista nao estava funcionando, entao usei os indices
                 {
                     SegurandoCaixahorizontal = true;
+                    Debug.Log("horizontal");
                 }
                 else
                 {
                     SegurandoCaixavertical = true;
+                    Debug.Log("vertical");
+                }*/
+
+                if (i==0 || i==1)
+                {
+                    SegurandoCaixahorizontal = true;
+                    Debug.Log("horizontal");
+                }
+                else
+                {
+                    SegurandoCaixavertical = true;
+                    Debug.Log("vertical");
                 }
 
-                if(box != null)
-                {
-                    return;
-                }
+                //if(box != null)
+                //{
+                //return;
+                //}
             }
             else if (hits[i].collider != null && hits[i].collider.gameObject.tag == "Untagged" && Input.GetKeyUp(BotaoCaixa))
             {
@@ -77,5 +103,6 @@ public class Playerpush : MonoBehaviour
         Gizmos.DrawLine(transform.position, ((Vector2)transform.position + Vector2.up * distance));
         Gizmos.DrawLine(transform.position, ((Vector2)transform.position + Vector2.down * distance));
     }
+
 
 }

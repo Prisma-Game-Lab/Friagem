@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Flash : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class Flash : MonoBehaviour
 
     public AudioSource flashSound;
     public AudioSource heartbeat;
-    public TextMeshProUGUI flareText;
+    public Text flareText;
 
     private int numFlares;
     private bool carregado = true;

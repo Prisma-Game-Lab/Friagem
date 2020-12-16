@@ -10408,6 +10408,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1130679632}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1130679634 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 55836115212651289, guid: ef8a52155b169734093696536a03d1e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1130679632}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1229222274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17071,18 +17083,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1696098471}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1712602214 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8924093253160011793, guid: ef8a52155b169734093696536a03d1e0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1130679632}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1747997428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18977,7 +18977,7 @@ PrefabInstance:
         type: 3}
       propertyPath: flareText
       value: 
-      objectReference: {fileID: 1712602214}
+      objectReference: {fileID: 1130679634}
     - target: {fileID: 382430723022428210, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: totalFlares
