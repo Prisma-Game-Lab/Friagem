@@ -3657,6 +3657,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 755527877}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &755527879 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 55836115212651289, guid: ef8a52155b169734093696536a03d1e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 755527877}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &820231625 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2505430204482320002, guid: 7d4403fa36c88a84b8397077860aee37,
@@ -11550,18 +11562,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2074028801 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8924093253160011793, guid: ef8a52155b169734093696536a03d1e0,
-    type: 3}
-  m_PrefabInstance: {fileID: 755527877}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2108806020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11683,7 +11683,7 @@ PrefabInstance:
         type: 3}
       propertyPath: flareText
       value: 
-      objectReference: {fileID: 2074028801}
+      objectReference: {fileID: 755527879}
     - target: {fileID: 382430723022428210, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: totalFlares
