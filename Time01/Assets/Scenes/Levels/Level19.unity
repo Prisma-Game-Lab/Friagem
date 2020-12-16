@@ -30077,6 +30077,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -22
       objectReference: {fileID: 0}
+    - target: {fileID: 9094955189990535782, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9176919784044169291, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: flareText
