@@ -28,6 +28,8 @@ public class Move : MonoBehaviour
     public List<AudioSource> passos;
     public AudioSource colisaoSound;
     public LayerMask pitMask;
+    [HideInInspector]
+    public int d;
     
 
 
@@ -65,6 +67,10 @@ public class Move : MonoBehaviour
             RaycastHit2D hitHb = Physics2D.Raycast(transform.position, h * MoveHor, playerPush.distance, pitMask);
             RaycastHit2D hitVb = Physics2D.Raycast(transform.position, v * MoveVer, playerPush.distance, pitMask);
 
+            if(h!=0 || v != 0)
+            {
+                d = verificaDirecao(h, v);
+            }
 
             if (!Moving)
             {
@@ -189,5 +195,30 @@ public class Move : MonoBehaviour
     {
         yield return new WaitForSeconds(6.0f);
         startLevel = true;
+    }
+
+    //ve a direção para a qual o player está olhando e retorna um inteiro correspondente a direção da caixa
+    int verificaDirecao(float h, float v)
+    {
+        if (h > 0)
+        {
+            return 0;
+        }
+        else if (h < 0)
+        {
+            return 1;
+        }
+        else if (v > 0)
+        {
+            return 2;
+        }
+        else if (v < 0)
+        {
+            return 3;
+        }
+        else
+        {
+            return -1;
+        }
     }
 }
