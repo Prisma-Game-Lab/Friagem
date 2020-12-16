@@ -10,15 +10,12 @@ public class SoundManager : MonoBehaviour
 
    private void Start() {
        if(instance == null){
-           instance = this;
+            instance = this;
+            boxFalling = transform.GetChild(0).GetComponent<AudioSource>();
+            DontDestroyOnLoad(transform.gameObject);
        }
        else{
            Destroy(this.gameObject);
        }
-   }
-
-   private void Awake() {
-       boxFalling = transform.GetChild(0).GetComponent<AudioSource>();
-       DontDestroyOnLoad(transform.gameObject);
    }
 }
