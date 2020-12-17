@@ -8,7 +8,7 @@ public class AudioConfig : MonoBehaviour
 {
     private int firstPlayInt;
     public Slider backgound, sfx, main;
-    private float backgroundVol, sfxVol, mainVol;
+    public static float backgroundVol, sfxVol, mainVol;
 
     //public AudioSource BGM;
     //public AudioSource[] SFX;
@@ -58,6 +58,7 @@ public class AudioConfig : MonoBehaviour
         PlayerPrefs.SetFloat("BackgorundPref", backgound.value);
         PlayerPrefs.SetFloat("SfxPref", sfx.value);
         PlayerPrefs.SetFloat("MainPref", main.value);
+        KeepSettings();
     }
 
     private void OnApplicationFocus(bool focus)
