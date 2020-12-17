@@ -19729,7 +19729,7 @@ PrefabInstance:
     - target: {fileID: 6183089956429550541, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6183089956784597522, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
@@ -28345,7 +28345,7 @@ PrefabInstance:
     - target: {fileID: 6230964311145668020, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: NextLevel
-      value: Main Menu
+      value: Level14
       objectReference: {fileID: 0}
     - target: {fileID: 6534497609056589064, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
