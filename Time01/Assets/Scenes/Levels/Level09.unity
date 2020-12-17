@@ -215,7 +215,7 @@ PrefabInstance:
     - target: {fileID: 6257723797387800497, guid: a79971eefd9c8c1429250bad94c17af2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.999999
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6257723797387800497, guid: a79971eefd9c8c1429250bad94c17af2,
         type: 3}
@@ -19817,6 +19817,16 @@ PrefabInstance:
       propertyPath: flareText
       value: 
       objectReference: {fileID: 2185723170846140718}
+    - target: {fileID: 9176919784044169291, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+        type: 3}
+      propertyPath: sistemaDeCargas
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9176919784044169291, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+        type: 3}
+      propertyPath: totalFlares
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eb8254b414739a4eaf4b1ac583f7e72, type: 3}
 --- !u!1 &2185723170846140714 stripped

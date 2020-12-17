@@ -10605,7 +10605,7 @@ PrefabInstance:
     - target: {fileID: 382430723022428210, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
       propertyPath: totalFlares
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 382430723022428210, guid: 40ae3ab7655f4f2468369b0f7ee41340,
         type: 3}
