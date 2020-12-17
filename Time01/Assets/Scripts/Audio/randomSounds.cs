@@ -23,6 +23,7 @@ public class randomSounds : MonoBehaviour
         currentTime += Time.deltaTime;
         if(currentTime >= currentInterval)
         {
+            sfxSource.volume = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("SfxPref");
             sfxSource.clip = soundList[Random.Range(0,soundList.Count)];
             sfxSource.Play();
             currentTime=0;

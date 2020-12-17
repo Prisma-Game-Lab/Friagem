@@ -17,7 +17,7 @@ public class Buraco : MonoBehaviour
     {
         if(collision.collider.CompareTag("Untagged"))
         {
-            SoundManager.instance.boxFalling.Play();
+            SoundManager.instance.PlayBoxFalling();
             Destroy(gameObject);
             Destroy(collision.gameObject);
             playerPush.SegurandoCaixahorizontal = false;

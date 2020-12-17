@@ -37,13 +37,18 @@ public class Flash : MonoBehaviour
     {
         if(Input.GetKeyDown(BotaoFlash))
         {
-            flashSound.Play();
-            heartbeat.Play();
+            
 
             if(!sistemaDeCargas && carregado)
             {
                 StartCoroutine(FlareCoolDown());
                 StartCoroutine(Luz());
+
+                var vol = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("SfxPref");;
+                flashSound.volume = vol;
+                heartbeat.volume = vol;
+                flashSound.Play();
+                heartbeat.Play();
             }
             else if(sistemaDeCargas && numFlares > 0)
             {
@@ -51,6 +56,12 @@ public class Flash : MonoBehaviour
                 numFlares = numFlares - 1;
                 flareText.text = "Level Flares: " + numFlares.ToString();
                 Debug.Log(numFlares);
+
+                var vol = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("SfxPref");;
+                flashSound.volume = vol;
+                heartbeat.volume = vol;
+                flashSound.Play();
+                heartbeat.Play();
             }
         }
     }

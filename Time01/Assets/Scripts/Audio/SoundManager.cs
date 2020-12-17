@@ -18,4 +18,9 @@ public class SoundManager : MonoBehaviour
            Destroy(this.gameObject);
        }
    }
+
+   public void PlayBoxFalling(){
+        boxFalling.volume = PlayerPrefs.GetFloat("SfxPref") * PlayerPrefs.GetFloat("MainPref");
+        boxFalling.Play();
+   }
 }
