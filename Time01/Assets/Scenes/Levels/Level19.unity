@@ -30012,6 +30012,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -4.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6183089957175027057, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+        type: 3}
+      propertyPath: m_Range
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 6230964311145668020, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: transition
