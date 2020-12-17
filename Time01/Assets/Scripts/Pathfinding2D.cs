@@ -144,7 +144,7 @@ public class GridNode : IComparable<GridNode>
 
             for(int i=0; i<4;i++)
             {
-                if(walkableMap.HasTile(candidatos[i])) //verificar se tem caixa/monstros tambem
+                if(IsWalkable(candidatos[i])) //verificar se tem caixa/monstros tambem
                 {
                     GridNode instance;
                     if(!allTiles.TryGetValue(candidatos[i],out instance))
@@ -160,5 +160,28 @@ public class GridNode : IComparable<GridNode>
         return this.neighbors;
 
     }
+
+    private bool IsWalkable(Vector3Int gridPos)
+    {
+        if(walkableMap.HasTile(gridPos))
+        {
+            Vector3 realPos = walkableMap.CellToWorld(gridPos);
+            Collider2D[] colList = new Collider2D[3];
+            int cols = Physics2D.OverlapPoint(new Vector2(realPos.x + 2.0f,realPos.y + 2.0f),new ContactFilter2D(), colList);
+
+            for(int i=0; i<cols; i++)
+            {
+                Collider2D col = colList[i];
+                if(col.CompareTag("Enemy") || col.CompareTag("Box") || col.CompareTag("Wall"))
+                {
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+        return false;
+    }
+
 
 }
