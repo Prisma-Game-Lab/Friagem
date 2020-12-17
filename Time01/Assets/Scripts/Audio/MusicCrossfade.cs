@@ -25,6 +25,7 @@ public class MusicCrossfade : MonoBehaviour
         activeAudioSource = aud[activeAudioSourceIndex ? 0:1];
         nextAudioSource = aud[activeAudioSourceIndex ? 1:0];
         activeAudioSource.clip = music;
+        activeAudioSource.volume = AudioConfig.mainVol * AudioConfig.backgroundVol;
         activeAudioSource.Play();
     }
  
@@ -52,7 +53,7 @@ public class MusicCrossfade : MonoBehaviour
     IEnumerator transition(float transitionDuration) {
  
         for (float i = 0.0f; i <= transitionDuration; i+=0.01f) {
-            var vol = (transitionDuration - i) * (1f / transitionDuration);
+            var vol = (transitionDuration - i) * (1f / transitionDuration) * AudioConfig.mainVol * AudioConfig.backgroundVol;
             activeAudioSource.volume = vol;
             nextAudioSource.volume = 1-vol;
  
@@ -64,7 +65,7 @@ public class MusicCrossfade : MonoBehaviour
         //finish by stopping the audio clip on the now silent audio source
         activeAudioSource.Stop();
         activeAudioSource.volume = 0.0f;
-        nextAudioSource.volume = 1.0f;
+        nextAudioSource.volume = 1.0f * AudioConfig.mainVol * AudioConfig.backgroundVol;
  
         activeAudioSourceIndex = !activeAudioSourceIndex;
         activeAudioSource = aud[activeAudioSourceIndex ? 0:1];

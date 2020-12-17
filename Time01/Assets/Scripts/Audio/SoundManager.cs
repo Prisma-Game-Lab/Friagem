@@ -18,4 +18,9 @@ public class SoundManager : MonoBehaviour
            Destroy(this.gameObject);
        }
    }
+
+   public void PlayBoxFalling(){
+        boxFalling.volume = AudioConfig.sfxVol * AudioConfig.mainVol;
+        boxFalling.Play();
+   }
 }
