@@ -19782,6 +19782,16 @@ PrefabInstance:
       propertyPath: NextLevel
       value: Level10
       objectReference: {fileID: 0}
+    - target: {fileID: 6465368386941528282, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465368386941528282, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 54
+      objectReference: {fileID: 0}
     - target: {fileID: 6534497609056589064, guid: 8eb8254b414739a4eaf4b1ac583f7e72,
         type: 3}
       propertyPath: m_LocalPosition.x
