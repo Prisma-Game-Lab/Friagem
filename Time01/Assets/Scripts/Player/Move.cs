@@ -43,7 +43,7 @@ public class Move : MonoBehaviour
         playerPush = GetComponent<Playerpush>();
         anim = GetComponent<Animator>();
 
-        if(SceneManager.GetActiveScene().buildIndex < 3)
+        if(SceneManager.GetActiveScene().buildIndex < 3 || SceneManager.GetActiveScene().buildIndex == 18)
         {
             startLevel = true;
         }
