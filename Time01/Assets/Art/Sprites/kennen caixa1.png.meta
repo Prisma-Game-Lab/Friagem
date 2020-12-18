@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: bed7983691ea6fc46b2e8de0312f4eed
+guid: 0670ed03fe601a2409960a295a9632af
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1999622918868266708
-    second: kennen caixa2_0
+      213: 7096920266983455966
+    second: kennen caixa1_0
   - first:
-      213: 2003845257398620613
-    second: kennen caixa2_1
+      213: -6015798185361423006
+    second: kennen caixa1_1
   - first:
-      213: -6076930174511553756
-    second: kennen caixa2_2
+      213: -7002533434870170453
+    second: kennen caixa1_2
   - first:
-      213: -8016671075337470799
-    second: kennen caixa2_3
-  - first:
-      213: 1411610847150513176
-    second: kennen caixa2_4
-  - first:
-      213: -5881093352219541143
-    second: kennen caixa2_5
+      213: 8566897938894322034
+    second: kennen caixa1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,33 +99,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kennen caixa2_0
+      name: kennen caixa1_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 260
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c21902cbc89ef34e0800000000000000
-      internalID: -1999622918868266708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kennen caixa2_1
-      rect:
-        serializedVersion: 2
-        x: 50
+        x: 60
         y: 0
-        width: 170
+        width: 160
         height: 290
       alignment: 9
       pivot: {x: 0.65, y: 0.5}
@@ -140,14 +113,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c1981015a61fcb10800000000000000
-      internalID: 2003845257398620613
+      spriteID: edcb1d8b1635d7260800000000000000
+      internalID: 7096920266983455966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kennen caixa2_2
+      name: kennen caixa1_1
       rect:
         serializedVersion: 2
         x: 400
@@ -161,19 +134,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 423e26704386aaba0800000000000000
-      internalID: -6076930174511553756
+      spriteID: 265c7196c67938ca0800000000000000
+      internalID: -6015798185361423006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kennen caixa2_3
+      name: kennen caixa1_2
       rect:
         serializedVersion: 2
         x: 740
         y: 0
-        width: 170
+        width: 160
         height: 290
       alignment: 9
       pivot: {x: 0.35, y: 0.5}
@@ -182,35 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc7c5191201fb090800000000000000
-      internalID: -8016671075337470799
+      spriteID: bac74c621f002de90800000000000000
+      internalID: -7002533434870170453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kennen caixa2_4
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 260
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81c9e71269c079310800000000000000
-      internalID: 1411610847150513176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: kennen caixa2_5
+      name: kennen caixa1_3
       rect:
         serializedVersion: 2
         x: 1040
@@ -224,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9610b0a61c8226ea0800000000000000
-      internalID: -5881093352219541143
+      spriteID: 27972da394cb3e670800000000000000
+      internalID: 8566897938894322034
       vertices: []
       indices: 
       edges: []
@@ -233,7 +185,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 93c9b3c28f7b91c40bd80c2a6863b49f
+    spriteID: a72ff95adc9abca4e8096c43edb88222
     internalID: 0
     vertices: []
     indices: 
