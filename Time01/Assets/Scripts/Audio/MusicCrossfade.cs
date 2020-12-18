@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicCrossfade : MonoBehaviour
   {
     [SerializeField] private float crossFadeTime;
-    [SerializeField] private AudioClip music;
+    [SerializeField] private List<AudioClip> music;
+    private AudioClip currentMusic;
     private AudioSource[] aud = new AudioSource[2];
     private bool activeAudioSourceIndex;
     private AudioSource activeAudioSource;
@@ -13,6 +15,7 @@ public class MusicCrossfade : MonoBehaviour
     IEnumerator musicTransition = null;
  
     void Awake () {
+        
         aud[0] = gameObject.AddComponent<AudioSource>();
         aud[1] = gameObject.AddComponent<AudioSource>();
         
@@ -24,20 +27,59 @@ public class MusicCrossfade : MonoBehaviour
         
         activeAudioSource = aud[activeAudioSourceIndex ? 0:1];
         nextAudioSource = aud[activeAudioSourceIndex ? 1:0];
-        activeAudioSource.clip = music;
-        activeAudioSource.volume = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");;
+        activeAudioSource.clip = music[0];
+        activeAudioSource.volume = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");
+        currentMusic = music[0];
         activeAudioSource.Play();
     }
  
     void Update() {
         
-        if(music.length - activeAudioSource.time <= crossFadeTime)
+        if(currentMusic.length - activeAudioSource.time <= crossFadeTime)
         {
-            newSoundtrack(music);
+            newSoundtrack(currentMusic);
         }
         if(musicTransition == null)
         {
             activeAudioSource.volume = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");;
+        }
+        switch(SceneManager.GetActiveScene().buildIndex)
+        {
+            case 1:
+            case 2:
+            case 3:
+                if(currentMusic != music[0]){ currentMusic = music[0]; newSoundtrack(currentMusic); }
+                break;
+            case 4:
+            case 5:
+            case 6:               
+            case 7:
+                if(currentMusic != music[1]){ currentMusic = music[1]; newSoundtrack(currentMusic); }
+                break;
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+                if(currentMusic != music[2]){ currentMusic = music[2]; newSoundtrack(currentMusic); }
+                break;
+            case 12:
+            case 13:
+            case 14:
+                if(currentMusic != music[3]){ currentMusic = music[3]; newSoundtrack(currentMusic); }
+                break;
+            case 15:          
+            case 16:          
+            case 17:
+                if(currentMusic != music[4]){ currentMusic = music[4]; newSoundtrack(currentMusic); }
+                break;
+            case 18:
+                if (musicTransition != null){
+                    StopCoroutine(musicTransition);
+                }
+                activeAudioSource.Stop();
+                nextAudioSource.Stop();
+            break;
+                    
         }
     }
     public void newSoundtrack (AudioClip clip) {
