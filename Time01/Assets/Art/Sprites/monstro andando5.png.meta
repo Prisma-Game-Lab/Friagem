@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: 4a6c26205282528488e95d6ad527282e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3543713175255451788
+    second: monstro andando5_0
+  - first:
+      213: 1792563828102179912
+    second: monstro andando5_1
+  - first:
+      213: -1170193124130340425
+    second: monstro andando5_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,13 +49,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 8
-  spriteBorder: {x: 340, y: 20, z: 370, w: 30}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -85,11 +94,74 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: monstro andando5_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8809f48b5ccd2130800000000000000
+      internalID: 3543713175255451788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro andando5_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cae33ed4770e810800000000000000
+      internalID: 1792563828102179912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstro andando5_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 2
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b14b95bd83a2cfe0800000000000000
+      internalID: -1170193124130340425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 0b5935f5fe011f645af4955cade0859f
     internalID: 0
     vertices: []
     indices: 
