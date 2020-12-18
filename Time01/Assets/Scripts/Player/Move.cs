@@ -195,7 +195,7 @@ public class Move : MonoBehaviour
             qualPasso = qualPasso%passos.Count;
         }
         lastPasso = qualPasso;
-        passos[qualPasso].volume = AudioConfig.mainVol * AudioConfig.sfxVol;
+        passos[qualPasso].volume = PlayerPrefs.GetFloat("SfxPref") * PlayerPrefs.GetFloat("MainPref");
         passos[qualPasso].Play();
     }
 

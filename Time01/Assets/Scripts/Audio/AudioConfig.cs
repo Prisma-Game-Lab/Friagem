@@ -8,7 +8,8 @@ public class AudioConfig : MonoBehaviour
 {
     private int firstPlayInt;
     public Slider backgound, sfx, main;
-    public static float backgroundVol, sfxVol, mainVol;
+    [HideInInspector]
+    public float backgroundVol, sfxVol, mainVol;
 
     //public AudioSource BGM;
     //public AudioSource[] SFX;
