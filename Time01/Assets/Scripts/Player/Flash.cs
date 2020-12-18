@@ -24,6 +24,7 @@ public class Flash : MonoBehaviour
 
     private int numFlares;
     private bool carregado = true;
+    private bool canFlash = true;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +36,7 @@ public class Flash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(BotaoFlash))
+        if(Input.GetKeyDown(BotaoFlash) && canFlash)
         {
             
 
@@ -73,7 +74,9 @@ public class Flash : MonoBehaviour
         ilumina = true;
         Flare.SetActive(true);
         Lanterna.SetActive(false);
+        canFlash = false;
         yield return new WaitForSeconds(tempoIluminado);
+        canFlash = true;
         ilumina = false;
         Flare.SetActive(false);
         Lanterna.SetActive(true);
