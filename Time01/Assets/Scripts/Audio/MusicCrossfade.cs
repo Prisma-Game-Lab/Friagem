@@ -25,7 +25,7 @@ public class MusicCrossfade : MonoBehaviour
         activeAudioSource = aud[activeAudioSourceIndex ? 0:1];
         nextAudioSource = aud[activeAudioSourceIndex ? 1:0];
         activeAudioSource.clip = music;
-        activeAudioSource.volume = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");;
+        activeAudioSource.volume = AudioConfig.mainVol * AudioConfig.backgroundVol;
         activeAudioSource.Play();
     }
  
@@ -34,10 +34,6 @@ public class MusicCrossfade : MonoBehaviour
         if(music.length - activeAudioSource.time <= crossFadeTime)
         {
             newSoundtrack(music);
-        }
-        if(musicTransition == null)
-        {
-            activeAudioSource.volume = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");;
         }
     }
     public void newSoundtrack (AudioClip clip) {
@@ -57,7 +53,7 @@ public class MusicCrossfade : MonoBehaviour
     IEnumerator transition(float transitionDuration) {
  
         for (float i = 0.0f; i <= transitionDuration; i+=0.01f) {
-            var vol = (transitionDuration - i) * (1f / transitionDuration) * PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");;
+            var vol = (transitionDuration - i) * (1f / transitionDuration) * AudioConfig.mainVol * AudioConfig.backgroundVol;
             activeAudioSource.volume = vol;
             nextAudioSource.volume = 1-vol;
  
@@ -69,7 +65,7 @@ public class MusicCrossfade : MonoBehaviour
         //finish by stopping the audio clip on the now silent audio source
         activeAudioSource.Stop();
         activeAudioSource.volume = 0.0f;
-        nextAudioSource.volume = 1.0f * PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");;
+        nextAudioSource.volume = 1.0f * AudioConfig.mainVol * AudioConfig.backgroundVol;
  
         activeAudioSourceIndex = !activeAudioSourceIndex;
         activeAudioSource = aud[activeAudioSourceIndex ? 0:1];

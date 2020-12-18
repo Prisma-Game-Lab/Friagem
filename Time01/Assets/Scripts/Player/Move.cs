@@ -43,7 +43,7 @@ public class Move : MonoBehaviour
         playerPush = GetComponent<Playerpush>();
         anim = GetComponent<Animator>();
 
-        if(SceneManager.GetActiveScene().buildIndex < 3)
+        if(SceneManager.GetActiveScene().buildIndex < 3 || SceneManager.GetActiveScene().buildIndex == 18)
         {
             startLevel = true;
         }
@@ -195,7 +195,7 @@ public class Move : MonoBehaviour
             qualPasso = qualPasso%passos.Count;
         }
         lastPasso = qualPasso;
-        passos[qualPasso].volume = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("SfxPref");;
+        passos[qualPasso].volume = AudioConfig.mainVol * AudioConfig.sfxVol;
         passos[qualPasso].Play();
     }
 

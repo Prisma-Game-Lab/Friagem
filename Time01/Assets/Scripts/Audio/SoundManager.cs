@@ -20,7 +20,7 @@ public class SoundManager : MonoBehaviour
    }
 
    public void PlayBoxFalling(){
-        boxFalling.volume = PlayerPrefs.GetFloat("SfxPref") * PlayerPrefs.GetFloat("MainPref");
+        boxFalling.volume = AudioConfig.sfxVol * AudioConfig.mainVol;
         boxFalling.Play();
    }
 }

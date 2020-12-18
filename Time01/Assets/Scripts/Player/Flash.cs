@@ -44,7 +44,7 @@ public class Flash : MonoBehaviour
                 StartCoroutine(FlareCoolDown());
                 StartCoroutine(Luz());
 
-                var vol = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("SfxPref");;
+                var vol = AudioConfig.mainVol * AudioConfig.sfxVol;
                 flashSound.volume = vol;
                 heartbeat.volume = vol;
                 flashSound.Play();
@@ -57,7 +57,7 @@ public class Flash : MonoBehaviour
                 flareText.text = "Level Flares: " + numFlares.ToString();
                 Debug.Log(numFlares);
 
-                var vol = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("SfxPref");;
+                var vol = AudioConfig.mainVol * AudioConfig.sfxVol;
                 flashSound.volume = vol;
                 heartbeat.volume = vol;
                 flashSound.Play();
