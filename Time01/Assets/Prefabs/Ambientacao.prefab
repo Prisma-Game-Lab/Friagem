@@ -369,4 +369,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crossFadeTime: 4
-  music: {fileID: 8300000, guid: 1df07ec358046324aae14a6b1567a929, type: 3}
+  music:
+  - {fileID: 8300000, guid: 8d5a866592d9a154ca80dd733b11391e, type: 3}
+  - {fileID: 8300000, guid: 1331f7cf09b45ee4cbe16e62ccc34e69, type: 3}
+  - {fileID: 8300000, guid: a55ac047db6b6754ea8ae3c35a12e11f, type: 3}
+  - {fileID: 8300000, guid: 1df07ec358046324aae14a6b1567a929, type: 3}
+  - {fileID: 8300000, guid: 6087e15f3e8628042813f582f2eda419, type: 3}
