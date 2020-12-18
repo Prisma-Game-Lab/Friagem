@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,7 +25,7 @@ public class MusicCrossfade : MonoBehaviour
         activeAudioSource = aud[activeAudioSourceIndex ? 0:1];
         nextAudioSource = aud[activeAudioSourceIndex ? 1:0];
         activeAudioSource.clip = music;
-        activeAudioSource.volume = AudioConfig.mainVol * AudioConfig.backgroundVol;
+        activeAudioSource.volume = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");;
         activeAudioSource.Play();
     }
  
@@ -34,6 +34,10 @@ public class MusicCrossfade : MonoBehaviour
         if(music.length - activeAudioSource.time <= crossFadeTime)
         {
             newSoundtrack(music);
+        }
+        if(musicTransition == null)
+        {
+            activeAudioSource.volume = PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");;
         }
     }
     public void newSoundtrack (AudioClip clip) {
@@ -49,23 +53,22 @@ public class MusicCrossfade : MonoBehaviour
         StartCoroutine(musicTransition);
     }
  
-        //  'transitionDuration' is how many tenths of a second it will take, eg, 10 would be equal to 1 second
     IEnumerator transition(float transitionDuration) {
  
-        for (float i = 0.0f; i <= transitionDuration; i+=0.01f) {
-            var vol = (transitionDuration - i) * (1f / transitionDuration) * AudioConfig.mainVol * AudioConfig.backgroundVol;
+        for (float i = 0.0f; i <= transitionDuration; i+=0.1f) {
+            var vol = (transitionDuration - i) * (1f / transitionDuration) * PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");;
             activeAudioSource.volume = vol;
             nextAudioSource.volume = 1-vol;
  
  
-            yield return new WaitForSecondsRealtime(0.01f);
+            yield return new WaitForSecondsRealtime(0.1f);
             //use realtime otherwise if you pause the game you could pause the transition half way
         }
  
         //finish by stopping the audio clip on the now silent audio source
         activeAudioSource.Stop();
         activeAudioSource.volume = 0.0f;
-        nextAudioSource.volume = 1.0f * AudioConfig.mainVol * AudioConfig.backgroundVol;
+        nextAudioSource.volume = 1.0f * PlayerPrefs.GetFloat("MainPref") * PlayerPrefs.GetFloat("BackgorundPref");;
  
         activeAudioSourceIndex = !activeAudioSourceIndex;
         activeAudioSource = aud[activeAudioSourceIndex ? 0:1];
