@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1920762173260833420}
   - component: {fileID: 1920762173260833419}
   - component: {fileID: 1920762173260833416}
+  - component: {fileID: 3043942866684526567}
+  - component: {fileID: 2080713412896753983}
   m_Layer: 0
   m_Name: Inimigo
   m_TagString: Enemy
@@ -148,3 +150,123 @@ MonoBehaviour:
   Speed: 0.8
   player: {fileID: 0}
   ground: {fileID: 0}
+--- !u!114 &3043942866684526567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920762173260833423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6180988ae56d05645a1f5ae65303feef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundRadius: 9
+  monsterClips:
+  - {fileID: 8300000, guid: 1cdea58e818774a48a93563d3750d18d, type: 3}
+  - {fileID: 8300000, guid: 2adcea050091493488d89330293e6c3a, type: 3}
+  - {fileID: 8300000, guid: 5316f30f23e6e074a87cf7cefb50ca97, type: 3}
+  - {fileID: 8300000, guid: eb065c5768087e84b9803328323e6a2b, type: 3}
+  - {fileID: 8300000, guid: 94251f85f9b46a04587a4c418f287988, type: 3}
+  - {fileID: 8300000, guid: ee4253f2af720424d809276024c4afa6, type: 3}
+  - {fileID: 8300000, guid: fd667f2fe51d8d34caf260c857f13cf0, type: 3}
+  - {fileID: 8300000, guid: d6597acfb6ed6ec44947de8e2796a9b6, type: 3}
+  - {fileID: 8300000, guid: 9cbd379cbab6a9246812d244b87586f4, type: 3}
+  - {fileID: 8300000, guid: 1ab620a0855f85047a725ea91aac485f, type: 3}
+--- !u!82 &2080713412896753983
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920762173260833423}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

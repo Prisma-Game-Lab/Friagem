@@ -12,7 +12,7 @@ public class EnemyFollow : MonoBehaviour
 
     public Tilemap ground;
 
-
+    private MonsterSound ms;
     private bool Moving = false;
     private bool CanMove = false;
     private Flash flash;
@@ -22,6 +22,7 @@ public class EnemyFollow : MonoBehaviour
     void Start()
     {
         flash = player.GetComponent<Flash>();
+        ms = GetComponent<MonsterSound>();
         StartCoroutine(EnableMove());
     }
 
@@ -59,7 +60,7 @@ public class EnemyFollow : MonoBehaviour
                 if (!flash.ilumina)
                 {
                     transform.position = NextPos; //Move para a direção alvo. -A
-                   
+                    ms.PlaySound(Vector3.Distance(transform.position, player.transform.position));
                     yield return new WaitForSeconds(Speed);
                 }
             }
