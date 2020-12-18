@@ -13,6 +13,7 @@ public class EnemyFollow : MonoBehaviour
     public Tilemap ground;
 
     private MonsterSound ms;
+    private Animator anim;
     private bool Moving = false;
     private bool CanMove = false;
     private Flash flash;
@@ -23,6 +24,7 @@ public class EnemyFollow : MonoBehaviour
     {
         flash = player.GetComponent<Flash>();
         ms = GetComponent<MonsterSound>();
+        anim = GetComponent<Animator>();
         StartCoroutine(EnableMove());
     }
 
@@ -59,9 +61,24 @@ public class EnemyFollow : MonoBehaviour
             {
                 if (!flash.ilumina)
                 {
+                    anim.SetBool("andando",true);
+                    Vector3 movVet = NextPos - transform.position;
+                    if(movVet.x > 0) anim.SetFloat("horizontal",1.0f);
+                    if(movVet.x < 0) anim.SetFloat("horizontal",-1.0f);
+                    if(movVet.x == 0) anim.SetFloat("horizontal",0.0f);
+
+                    if(movVet.y > 0) anim.SetFloat("vertical",1.0f);
+                    if(movVet.y < 0) anim.SetFloat("vertical",-1.0f);
+                    if(movVet.y == 0) anim.SetFloat("vertical",0.0f);
+                    
+
                     transform.position = NextPos; //Move para a direção alvo. -A
                     ms.PlaySound(Vector3.Distance(transform.position, player.transform.position));
                     yield return new WaitForSeconds(Speed);
+                }
+                else
+                {
+                    anim.SetBool("andando",false);
                 }
             }
         }
