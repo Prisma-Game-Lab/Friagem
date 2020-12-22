@@ -59,7 +59,6 @@ public class AudioConfig : MonoBehaviour
         PlayerPrefs.SetFloat("BackgorundPref", backgound.value);
         PlayerPrefs.SetFloat("SfxPref", sfx.value);
         PlayerPrefs.SetFloat("MainPref", main.value);
-        KeepSettings();
     }
 
     private void OnApplicationFocus(bool focus)
